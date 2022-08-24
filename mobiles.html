@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+            margin-top: -10px;
+        }
+        hr{
+            margin: 30px 0;
+        }
+        #container{
+            width: 95%;
+            margin: auto;
+        }
+        #sidebar{
+            width: 24%;
+        }
+        #categories{
+            margin-top: -20px;
+        }
+        .cat_head{
+            display: flex;
+            justify-content: space-between;
+        }
+        #all_cat{
+            list-style: none;
+            margin-left: -40px;
+        }
+        #mob_cat{
+            list-style: none;
+            margin-left: -30px;
+        }
+        #location{
+            margin-left: -30px;
+        }
+        #loc_div{
+            height: 150px;
+            overflow-y: scroll;
+        }
+        #loc_div>ul{
+            margin-top: 0px;
+        }
+        ::-webkit-scrollbar {
+        width: 5px;
+        }
+        ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+        }
+        ::-webkit-scrollbar-thumb {
+        background: #888; 
+        }
+        ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+        }
+        .teal{
+            background-color: skyblue;
+            padding: 4px;
+            font-weight: bold;
+        }
+        li{
+            margin-bottom: 5px;
+        }
+        .brand_filter{
+            margin: -10px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .chk_box{
+            width: 20px;
+            height: 20px;
+            border: 2px solid grey;
+        }
+        p~h2{
+            margin-top: -10px;
+        }
+        .gry{
+            color: grey;
+        }
+        .gry:hover{
+            color: black;
+        }
+        #price_range{
+            width: 100%;
+        }
+        .grey{
+            color: grey;
+        }
+        .cat_head+.grey{
+            margin-top: -10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <div id="container">
+        
+        <div id="sidebar">
+            <p class="gry">Home / Mobiles</p>
+            <h2>Used Mobile Phones in India</h2>
+            
+            <div id="categories">
+                <div class="cat_head">
+                    <h3>CATEGORIES</h3>
+                    <h2>^</h2>
+                </div>
+                <ul id="all_cat">
+                    <li>
+                        <h4>━ All Categories</h4>
+                        <ul id="mob_cat">
+                            <li class="gry">━ Mobiles</li>
+                            <li class="teal">Mobile Phones</li>
+                            <li class="gry">Accessories</li>
+                            <li class="gry">Tablets</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <hr>
+
+                <div class="cat_head">
+                    <div><h3>LOCATIONS</h3></div>
+                    <div><h2>^</h2></div>
+                </div>
+                <div id="loc_div">
+                    <ul id="location">
+                        <li class="teal">━ India</li>
+                        <li class="gry">Uttar Pradesh</li>
+                        <li class="gry">Maharashtra</li>
+                        <li class="gry">Haryana</li>
+                        <li class="gry">Delhi</li>
+                        <li class="gry">Tamil Nadu</li>
+                        <li class="gry">Karnataka</li>
+                        <li class="gry">West Bengal</li>
+                        <li class="gry">Telangana</li>
+                        <li class="gry">Gujarat</li>
+                        <li class="gry">Kerala</li>
+                    </ul>
+                </div>
+                
+                <hr>
+
+                <h3 class="grey">Filters</h3>
+                <div class="cat_head">
+                    <h3>BUDGET</h3>
+                    <h2>^</h2>
+                </div>
+                <h4 class="grey">Choose a range below</h4>
+                
+                <!-- price slider                 -->
+                <input type="range" min="0" max="25000" id="price_range">
+
+                <hr>
+
+                <div class="cat_head">
+                    <h3>BRAND</h3>
+                    <h2>^</h2>
+                </div>
+                <h3>Popular Brands</h3>
+                <div class="brand_filter">
+                    <div class="chk_box"></div>
+                    <p>iPhone</p>
+                </div>
+                <div class="brand_filter">
+                    <div class="chk_box"></div>
+                    <p>Samsung</p>
+                </div>
+                <div class="brand_filter">
+                    <div class="chk_box"></div>
+                    <p>Mi</p>
+                </div>
+                <div class="brand_filter">
+                    <div class="chk_box"></div>
+                    <p>Vivo</p>
+                </div>
+                <div class="brand_filter">
+                    <div class="chk_box"></div>
+                    <p>Oppo</p>
+                </div>
+                <div class="brand_filter">
+                    <div class="chk_box"></div>
+                    <p>Realme</p>
+                </div>
+            </div>
+            
+        
+        </div>
+
+        <div id="mob_con"></div>
+
+    </div>
+</body>
+</html>
