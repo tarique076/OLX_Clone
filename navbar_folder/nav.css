@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 #navbar{
@@ -40,6 +41,7 @@
 } 
 
 .fa-chevron-down {
+    cursor: pointer;
     font-size: 24px;
     padding-right: 10px;
     transition: all 0.3s;
@@ -78,16 +80,17 @@
 #search {
     border: 2px solid rgb(39, 39, 40);
     border-radius: 5px;
-    width: 49%;
+    width: 45%;
     height: fit-content;
     padding: 0;
+    display: flex;
 }
 
 #search>input{
     font-size: 16px;
     border: none;
     outline: none;
-    width: 90%;
+    width: 95%;
     padding:9px 9px;
 }
 
@@ -97,7 +100,7 @@
 
 #search>i{
     background-color: rgb(39, 39, 40);
-    padding: 12px 16px;
+    padding: 12px 18px;
     font-size: 23px;
     color: white;
     text-align: end;
@@ -109,6 +112,7 @@
     border: none;
     font-weight: bold;
     font-size: larger;
+    cursor: pointer;
 }
 
 #language > div:first-child i {
@@ -135,4 +139,84 @@
 #language_div h3 i {
     margin-left: 90px;
     font-size: 25px;
+}
+
+#nav_login h3{
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+#nav_login:hover{
+    text-decoration: none;
+}
+
+#nav_sell button{
+    font-weight: bold;
+    border: none;
+    border: 6px solid ;
+    border-radius: 34px;
+    background-color: white;
+    cursor: pointer;
+    padding: 8px 12px;
+    display: flex;
+    border-color:rgb(76, 241, 186) rgb(59, 59, 227) blue rgb(250, 213, 7);
+}
+
+#nav_sell button i{
+    font-size: 18px;
+}
+
+#nav_sell button h3{
+    font-size: 16px;
+    padding: 0 5px;
+}
+
+
+
+#home_page_header{
+    cursor: pointer;
+    margin-top: 5px;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+    display: flex;
+    justify-content:space-around;
+    padding: 5px 150px 5px 5px;
+    align-items: center;
+}
+
+#down3 {
+    padding: 0 10px;
+}
+
+#home_page_header a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.826);
+}
+
+#home_page_header a:hover {
+    color: rgb(63, 171, 171);
+}
+
+/* dropdown css */
+#header_categories_data {
+    position: absolute;
+    z-index: 5;
+    background-color: white;
+    display: none;
+    padding: 0px 20px;
+    width: 96%;
+    left: 28px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;}
+
+#header_categories_data>div{
+    width: max-content;
+    margin-right: 7rem;
+}
+
+#header_categories_data h3{
+    padding-bottom: 16px;
+    margin-top: 30px;
+    color: rgba(0, 0, 0, 0.893);
+}
+#header_categories_data p{
+    padding-bottom: 13px;
 }

@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="nav.css">
     <script src="https://kit.fontawesome.com/5d8d1b2757.js" crossorigin="anonymous"></script>
 </head>
@@ -13,7 +14,7 @@
         <div id="olx_logo"><img src="./img/olx_logo.png" alt=""></div>
         <!-- location -->
         <div id="nav_location">
-            <div  id="nav_location_input">
+            <div id="nav_location_input">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <input id="location" placeholder="Search city, Area or Loc...">
                 <i id="down" class="fa-solid fa-chevron-down"></i>
@@ -23,12 +24,13 @@
                 <div class="loc"><i class="fa-solid fa-location-dot"></i>Mumbai</div>
                 <div class="loc"><i class="fa-solid fa-location-dot"></i>Delhi</div>
                 <div class="loc"><i class="fa-solid fa-location-dot"></i>Kerala</div>
-                <div class="loc"><i class="fa-solid fa-location-dot"></i>Mharashtra</div>
+                <div class="loc"><i class="fa-solid fa-location-dot"></i>Goa</div>
             </div>
         </div>
+
         <!-- search -->
 
-        <div  id="search" >
+        <div id="search" >
             <input type="search" placeholder="Find Cars, Mobile Phones and more...">
             <i class="fa-solid fa-magnifying-glass"></i>
         </div>
@@ -41,10 +43,23 @@
                 <h3 id="hindi">हिन्दी</h3>
             </div>
         </div>
-        <div><h3>Login</h3></div>   
-        <div></div>
+
+        <!-- login -->
+        <div id="nav_login"><h3>Login</h3></div>  
+        
+        <!-- sell -->
+        <div id="nav_sell">
+            <button><i class="fa-solid fa-plus"></i><h3>SELL</h3></button>
+        </div>
     </div>
+
+    <!-- header start -->
     <div id="add_footer"></div>
 </body>
 </html>
+<!-- <script type="module">
+
+    import footer from './components/footer.js'
+    document.getElementById('add_footer').innerHTML = footer()
+</script> -->
 <script src="nav.js"></script>
