@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+<style>
+    button{
+      display: flex;
+        height: 100px;
+        width: 100px;
+        margin: auto;
+        margin-top: 100px;
+    }
+</style>
+  </head>
+  <body>
+
+   
+      <div>
+     
+        <button onclick="edit()">Edit</button>
+      </div>
+
+  </body>
+</html>
+<script>
+    async function editdata(id,location) {
+try {
+  // let id=1;
+  let patchdata={
+    id,
+    location,
+  }
+  let res = await fetch(`http://localhost:3000/commercial/${patchdata.id}`, {
+    method: "PATCH",
+
+    body: JSON.stringify(patchdata),
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
+  id=id+1;
+  let data = await res.json();
+  console.log( data);
+  console.log( patchdata);
+
+} catch (error) {
+  console.log("🚀 ~ file: Admin.js ~ line 7 ~ editProduct ~ error", error)
+  
+}
+
+}
+
+const edit=()=> {
+  let states=["Bihar","Jharkhand","uttarakhand","Odisha","Delhi","Goa","Rajasthan","Kashmir","kerla"]
+for(let i=432,j=0;i<500,j<=states.length;i++,j++){
+if(j===states.length){
+  j=0;
+}else if(i>500){
+  break;
+}else{
+  editdata(i,states[j])
+}
+
+}
+
+}
+</script>
