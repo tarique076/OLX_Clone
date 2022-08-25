@@ -3,9 +3,9 @@
 // let bud_expand = document.querySelector('.budget_expand');
 // let brand_expand = document.querySelector('.brand_expand');
 
-let hide = document.getElementById('all_cat')
-let hide_loc = document.getElementById('loc_div')
-let hide_bud = document.getElementById('bud_div')
+let hide = document.getElementById('all_cat');
+let hide_loc = document.getElementById('loc_div');
+let hide_bud = document.getElementById('bud_div');
 let hide_brand = document.getElementById('brand_div');
 
 document.getElementById('cat_toggle').addEventListener('click',()=>{

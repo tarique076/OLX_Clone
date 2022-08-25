@@ -1,0 +1,98 @@
+ul{
+    list-style: none;
+    margin-top: -10px;
+}
+hr{
+    margin: 30px 0;
+}
+#container{
+    width: 95%;
+    margin: auto;
+    display: flex;
+}
+#sidebar{
+    width: 24%;
+}
+#categories{
+    margin-top: -20px;
+}
+.cat_head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.spin{ 
+  transform: rotate(180deg);
+}
+#all_cat{
+    list-style: none;
+    margin-left: -40px;
+}
+#mob_cat{
+    list-style: none;
+    margin-left: -30px;
+}
+#location{
+    margin-left: -30px;
+}
+#loc_div{
+    height: 150px;
+    overflow-y: scroll;
+}
+#loc_div>ul{
+    margin-top: 0px;
+}
+::-webkit-scrollbar {
+width: 5px;
+}
+::-webkit-scrollbar-track {
+background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+background: #888; 
+}
+::-webkit-scrollbar-thumb:hover {
+background: #555; 
+}
+.teal{
+    background-color: skyblue;
+    padding: 4px;
+    font-weight: bold;
+}
+li{
+    margin-bottom: 5px;
+}
+.brand_filter{
+    margin: -10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.chk_box{
+    width: 20px;
+    height: 20px;
+    border: 2px solid grey;
+}
+p~h2{
+    margin-top: -10px;
+}
+.gry{
+    color: grey;
+}
+.gry:hover{
+    color: black;
+}
+#price_range{
+    width: 100%;
+}
+.grey{
+    color: grey;
+}
+.cat_head+.grey{
+    margin-top: -10px;
+}
+#slider_price{
+    display: flex;
+    justify-content: space-between;
+}
