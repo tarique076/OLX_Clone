@@ -5,96 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        ul{
-            list-style: none;
-            margin-top: -10px;
-        }
-        hr{
-            margin: 30px 0;
-        }
-        #container{
-            width: 95%;
-            margin: auto;
-        }
-        #sidebar{
-            width: 24%;
-        }
-        #categories{
-            margin-top: -20px;
-        }
-        .cat_head{
-            display: flex;
-            justify-content: space-between;
-        }
-        #all_cat{
-            list-style: none;
-            margin-left: -40px;
-        }
-        #mob_cat{
-            list-style: none;
-            margin-left: -30px;
-        }
-        #location{
-            margin-left: -30px;
-        }
-        #loc_div{
-            height: 150px;
-            overflow-y: scroll;
-        }
-        #loc_div>ul{
-            margin-top: 0px;
-        }
-        ::-webkit-scrollbar {
-        width: 5px;
-        }
-        ::-webkit-scrollbar-track {
-        background: #f1f1f1; 
-        }
-        ::-webkit-scrollbar-thumb {
-        background: #888; 
-        }
-        ::-webkit-scrollbar-thumb:hover {
-        background: #555; 
-        }
-        .teal{
-            background-color: skyblue;
-            padding: 4px;
-            font-weight: bold;
-        }
-        li{
-            margin-bottom: 5px;
-        }
-        .brand_filter{
-            margin: -10px 0;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        .chk_box{
-            width: 20px;
-            height: 20px;
-            border: 2px solid grey;
-        }
-        p~h2{
-            margin-top: -10px;
-        }
-        .gry{
-            color: grey;
-        }
-        .gry:hover{
-            color: black;
-        }
-        #price_range{
-            width: 100%;
-        }
-        .grey{
-            color: grey;
-        }
-        .cat_head+.grey{
-            margin-top: -10px;
-        }
-    </style>
+    <link rel="stylesheet" href="mobiles.css">
+    <script src="https://kit.fontawesome.com/5d8d1b2757.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="navbar"></div>
@@ -106,9 +18,10 @@
             <h2>Used Mobile Phones in India</h2>
             
             <div id="categories">
-                <div class="cat_head">
-                    <h3>CATEGORIES</h3>
-                    <h2>^</h2>
+                <div class="cat_head" id="cat_toggle">
+                    <h3 >CATEGORIES</h3>
+                    <!-- <h2 class="cat_expand">^</h2> -->
+                    <i id='cat' class="fa-solid fa-chevron-up"></i>
                 </div>
                 <ul id="all_cat">
                     <li>
@@ -124,9 +37,10 @@
                 
                 <hr>
 
-                <div class="cat_head">
+                <div class="cat_head" id="catt_toggle">
                     <div><h3>LOCATIONS</h3></div>
-                    <div><h2>^</h2></div>
+                    <!-- <div><h2 class="loc_expand">^</h2></div> -->
+                    <i id='catt' class="fa-solid fa-chevron-up"></i>
                 </div>
                 <div id="loc_div">
                     <ul id="location">
@@ -147,45 +61,54 @@
                 <hr>
 
                 <h3 class="grey">Filters</h3>
-                <div class="cat_head">
+                <div class="cat_head" id="cattt_toggle">
                     <h3>BUDGET</h3>
-                    <h2>^</h2>
+                    <!-- <h2 class="budget_expand">^</h2> -->
+                    <i id='cattt' class="fa-solid fa-chevron-up"></i>
                 </div>
-                <h4 class="grey">Choose a range below</h4>
-                
+                <div id="bud_div">
+                    <h4 class="grey">Choose a range below</h4>
+                    <div id="slider_price">
+                        <h3>0</h3>
+                        <h3>25000</h3>
+                    </div>
                 <!-- price slider                 -->
-                <input type="range" min="0" max="25000" id="price_range">
+                    <input type="range" min="0" max="25000" id="price_range">
+                </div>
 
                 <hr>
 
-                <div class="cat_head">
+                <div class="cat_head" id="catttt_toggle">
                     <h3>BRAND</h3>
-                    <h2>^</h2>
+                    <!-- <h2 class="brand_expand">^</h2> -->
+                    <i id='catttt' class="fa-solid fa-chevron-up"></i>
                 </div>
-                <h3>Popular Brands</h3>
-                <div class="brand_filter">
-                    <div class="chk_box"></div>
-                    <p>iPhone</p>
-                </div>
-                <div class="brand_filter">
-                    <div class="chk_box"></div>
-                    <p>Samsung</p>
-                </div>
-                <div class="brand_filter">
-                    <div class="chk_box"></div>
-                    <p>Mi</p>
-                </div>
-                <div class="brand_filter">
-                    <div class="chk_box"></div>
-                    <p>Vivo</p>
-                </div>
-                <div class="brand_filter">
-                    <div class="chk_box"></div>
-                    <p>Oppo</p>
-                </div>
-                <div class="brand_filter">
-                    <div class="chk_box"></div>
-                    <p>Realme</p>
+                <div id="brand_div">
+                    <h3 id="pop_brands">Popular Brands</h3>
+                    <div class="brand_filter">
+                        <div class="chk_box"></div>
+                        <p>iPhone</p>
+                    </div>
+                    <div class="brand_filter">
+                        <div class="chk_box"></div>
+                        <p>Samsung</p>
+                    </div>
+                    <div class="brand_filter">
+                        <div class="chk_box"></div>
+                        <p>Mi</p>
+                    </div>
+                    <div class="brand_filter">
+                        <div class="chk_box"></div>
+                        <p>Vivo</p>
+                    </div>
+                    <div class="brand_filter">
+                        <div class="chk_box"></div>
+                        <p>Oppo</p>
+                    </div>
+                    <div class="brand_filter">
+                        <div class="chk_box"></div>
+                        <p>Realme</p>
+                    </div>
                 </div>
             </div>
             
@@ -197,3 +120,5 @@
     </div>
 </body>
 </html>
+
+<script src="mobiles.js"></script>
