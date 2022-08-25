@@ -1,4 +1,5 @@
-/* ***************************head img****************************** */
+
+/* ***************************head imageg****************************** */
 
 .container{
     position: relative;
@@ -59,5 +60,69 @@
     top: 0%;
     right: 0%;
     z-index: 1;
-    cursor: pointer;
+    cursor: pointer;}
+
+/* ***************************head img****************************** */
+
+/* .container{
+    position: relative;
+    width: 100%;
+    
+    max-width: 100%;
 }
+.container img{
+    width: 100%;
+    height: 150px;
+    padding-bottom: 30px;
+}
+.container .btn{
+    position: absolute;
+    top: 40%;
+    left: 55%;
+    width: 100px;
+    height: 40px;
+    border-radius: 10%;
+    font-size:18px;
+    font-weight: bold;
+    background-color: white;
+    border-color: white;
+    border-width: 0.5vmax;
+    cursor: pointer;
+    
+}
+.container .btn:hover{
+    background-color: blue;
+    
+}
+.container a{
+    text-decoration: none;
+    color: black;
+}
+.container a:hover{
+    color: white;
+} */
+/* ***************************adver img****************************** */
+/* .add_img img{
+    width: 800px;
+    position: relative;
+    z-index: -1;
+    
+     
+}
+.add_img{
+    width: 800px;
+    margin: auto;
+    margin-top: 35px;
+    height: 200px;
+    position:relative;
+    
+    padding-bottom: 30px;
+}
+.add_img i{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    z-index: 1;
+    cursor: pointer;
+
+} */
