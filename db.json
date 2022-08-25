@@ -1,5 +1,5 @@
 {
-    "cars": [
+    "items": [
       {
         "id": "1",
         "category": "car",
@@ -479,12 +479,11 @@
         "brand": "Maruti Suzuki Wagon R",
         "location": "Delhi",
         "date": "Today"
-      }
-    ],
-    "bikes": [
+      },
+
       {
         "id": "41",
-        "category": "car",
+        "category": "bike",
         "owner": "olx",
         "years": "1",
         "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. ",
@@ -1469,9 +1468,8 @@
         "address": "Govind Nagar, Dohad",
         "date": "Today",
         "location": "Delhi"
-      }
-    ],
-    "mobiles": [
+      },
+ 
       {
         "id": "117",
         "category": "mobile",
@@ -3252,9 +3250,8 @@
         "address": "MG Road, Pune",
         "date": "7 days ago",
         "location": "Odisha"
-      }
-    ],
-    "house": [
+      },
+ 
       {
         "id": "256",
         "category": "house",
@@ -4318,9 +4315,8 @@
         "location": "Goa",
         "date": "Aug 13"
       }
-    ],
-    "scooters": [
-      {
+
+      ,{
         "id": "343",
         "category": "scooter",
         "owner": "olx",
@@ -5395,9 +5391,8 @@
         "location": "Kashmir",
         "date": "Today"
       }
-    ],
-    "commercial": [
-      {
+
+      ,{
         "id": "432",
         "category": "commercial",
         "owner": "olx",
