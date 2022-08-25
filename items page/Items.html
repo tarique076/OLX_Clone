@@ -1,9 +1,18 @@
-*{
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars</title>
+
+    <style>
+        *{
     margin: 0;
     padding: 0;
-    /* overflow-x: hidden; */
+
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+
 }
 #navbar{
     width: 100%;
@@ -11,40 +20,18 @@
     background-color: grey;
     display: flex;
     justify-content: space-around;
-    align-items: center;
     position: sticky;
     top: 0%;
-    /* z-index: 1; */
 }
-#navbar>input{
-    padding: 10px;
-    width: 20%;
-}
-#firstdiv{
-    width: 93%;
-    margin: auto;
-    display: flex;
-}
-#firstdiv>div{
-    margin: 5px;
-}
-#firsth1{
-    width: 93%;
-    margin: auto;
-}
-#main{
-    width: 93%;
-    margin: auto;
-    border: 2px solid salmon;
-    /* height: 300px; */
+#navbar>ul{
     display: flex;
     justify-content: space-around;
+
 }
-#sidebar{
-    width: 25%;
-    border: 2px solid green;
-    /* height: 95%; */
+#navbar>ul>li{
+    margin: 0 10px;
 }
+
 #container{
     width: 75%;
     height: 95%;
@@ -89,28 +76,19 @@
     justify-content: space-between;
     /* border: 2px solid black; */
 }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+   <ul>
+    <li value="house" id="car">cars</li>
+    <li value="bike" id="bike">bikes</li>
+    <li>scotters</li>
+    <li>house</li>
+   </ul>
+        </div>
+        <div id="container"></div>
+</body>
+</html>
 
-.category i{
-    font-size: 15px;
-    transition: all 0.3s;
-}
-.pehla{
-    width: 93%;
-    margin: 10px auto;
-    background-color: rgba(255,255,255,0.7);
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    /* justify-content: space-between; */
-}
-.pehla i{
-    font-size: 15px;
-}
-.dusra{
-    width: 93%;
-    margin: 10px auto;
-    background-color: #c793d2;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-}
+<script type="module" src="getdata.js"></script>
