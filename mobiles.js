@@ -71,7 +71,7 @@ let append = (data)=>{
         add_div.setAttribute('class', 'address_div');
 
         let address = document.createElement('p');
-        address.innerText = data[i].address;
+        address.innerText = data[i].location;
 
         let date = document.createElement('p');
         date.innerText = data[i].date;
@@ -92,8 +92,121 @@ let append = (data)=>{
     })
 }
 
-// function load_more(){
-//     z=z++;
-//     console.log('mnjkk');
-//     getData();
-// }
+// **********location-filters************
+
+document.querySelector('#loc_utt').addEventListener('click',async function(){
+    try{
+        let res = await fetch('http://localhost:3000/items?category=mobile&location=Uttarakhand');
+        let data = await res.json();
+
+        console.log(data);
+        append(data);
+
+    }catch(err){
+        console.log(err)
+    }
+});
+
+document.querySelector('#loc_bihar').addEventListener('click',async function(){
+    try{
+        let res = await fetch('http://localhost:3000/items?category=mobile&location=Bihar');
+        let data = await res.json();
+
+        console.log(data);
+        append(data);
+
+    }catch(err){
+        console.log(err)
+    }
+});
+
+document.querySelector('#loc_jh').addEventListener('click',async function(){
+    try{
+        let res = await fetch('http://localhost:3000/items?category=mobile&location=Jharkhand');
+        let data = await res.json();
+
+        console.log(data);
+        append(data);
+
+    }catch(err){
+        console.log(err)
+    }
+});
+
+document.querySelector('#loc_dl').addEventListener('click',async function(){
+    try{
+        let res = await fetch('http://localhost:3000/items?category=mobile&location=Delhi');
+        let data = await res.json();
+
+        console.log(data);
+        append(data);
+
+    }catch(err){
+        console.log(err)
+    }
+});
+
+document.querySelector('#loc_kl').addEventListener('click',async function(){
+    try{
+        let res = await fetch('http://localhost:3000/items?category=mobile&location=Kerala');
+        let data = await res.json();
+
+        console.log(data);
+        append(data);
+
+    }catch(err){
+        console.log(err)
+    }
+});
+
+document.querySelector('#loc_ga').addEventListener('click',async function(){
+    try{
+        let res = await fetch('http://localhost:3000/items?category=mobile&location=Goa');
+        let data = await res.json();
+
+        console.log(data);
+        append(data);
+
+    }catch(err){
+        console.log(err)
+    }
+});
+
+document.querySelector('#loc_in').addEventListener('click',async function(){
+    try{
+        let res = await fetch('http://localhost:3000/items?category=mobile');
+        let data = await res.json();
+
+        console.log(data);
+        append(data);
+
+    }catch(err){
+        console.log(err)
+    }
+});
+
+// ************Budget-Filter************
+
+let slider_price = document.querySelector('#price_range');
+slider_price.onchange = function(){
+    filterPrice();
+}
+
+let filterPrice = () =>{
+    document.querySelector('#max_bud').innerText=(slider_price.value);
+}
+
+document.querySelector('#apply_price').addEventListener('click', async function(){
+    let res = await fetch('http://localhost:3000/items?category=mobile');
+    let data = await res.json();
+
+    console.log(data);
+    let filter_data=data.filter(function(el){
+       return +(el.price) <= +(slider_price.value);
+    })
+    console.log(filter_data);
+    console.log(slider_price.value);
+    // if(slider_price.value<)
+    append(filter_data);
+
+})

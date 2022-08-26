@@ -87,6 +87,23 @@ p~h2{
 #price_range{
     width: 100%;
 }
+#price_slider_div{
+    display: flex;
+    gap: 10px;
+}
+#max_bud{
+    margin-right: 40px;
+}
+#apply_price{
+    padding: 7px 10px;
+    font-weight: bold;
+    border: none;
+    background-color: teal;
+    border-radius: 10%;
+}
+#apply_price:hover{
+    background-color: #555;
+}
 .grey{
     color: grey;
 }
