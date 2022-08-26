@@ -558,3 +558,43 @@ function appendData(cars){
     })
 }
 appendData(cars)
+
+let moving1 = document.getElementById('moving1');
+let category = document.querySelector('.category');
+let pehla = document.querySelector('.pehla');
+let dusra = document.querySelector('.dusra');
+let category_bottom = document.querySelector('.category_bottom');
+
+category.addEventListener('click',()=>{
+    pehla.classList.toggle('hidden')
+    dusra.classList.toggle('hidden')
+    moving1.classList.toggle('rotate')
+    category_bottom.classList.toggle('category_bottom_hidden')
+})
+let moving2 = document.getElementById('moving2');
+let locate = document.querySelector('.location');
+let india = document.querySelector('.india');
+let addstate = document.querySelector('.addstate');
+let state = document.getElementById('state')
+let chotaindia = document.querySelector('.chotaindia');
+locate.addEventListener('click',()=>{
+    moving2.classList.toggle('rotate');
+    state.classList.toggle('hidden')
+    chotaindia.classList.toggle('chotaindia_hidden')
+})
+
+let moving3 = document.getElementById('moving3');
+let brand_model = document.querySelector('.brand_model');
+let search_brand_model = document.querySelector('.search_brand_model')
+let allbrands = document.getElementById('allbrands');
+let brands = document.querySelector('.brands')
+let allmodels = document.getElementById('allmodels');
+let models = document.querySelector('.models');
+brand_model.addEventListener('click',()=>{
+    moving3.classList.toggle('rotate');
+    search_brand_model.classList.toggle('hide');
+    allmodels.classList.toggle('hidden')
+    models.classList.toggle('hidden')
+    allbrands.classList.toggle('hidden')
+    brands.classList.toggle('hidden')
+})
