@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars</title>
+    <link rel="stylesheet" href="cars.css">
+    <script src="https://kit.fontawesome.com/5d8d1b2757.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/87218ca82a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <div id="container">
+        
+        <div id="sidebar">
+            <p class="gry">Home / OLX Autos (Cars)</p>
+            <h2>Used Cars in India</h2>
+            
+            <div id="categories">
+                <div class="cat_head" id="cat_toggle">
+                    <h3 >CATEGORIES</h3>
+                    <!-- <h2 class="cat_expand">^</h2> -->
+                    <i id='cat' class="fa-solid fa-chevron-up"></i>
+                </div>
+                <ul id="all_cat">
+                    <li>
+                        <h4>━ All Categories</h4>
+                        <ul id="mob_cat">
+                            <li class="gry">━ Automobiles & Cars</li>
+                            <li class="teal">Cars</li>
+                            <li class="gry">Accessories</li>
+                            <!-- <li class="gry">Tablets</li> -->
+                        </ul>
+                    </li>
+                </ul>
+                
+                <hr>
+
+                <div class="cat_head" id="catt_toggle">
+                    <div><h3>LOCATIONS</h3></div>
+                    <!-- <div><h2 class="loc_expand">^</h2></div> -->
+                    <i id='catt' class="fa-solid fa-chevron-up"></i>
+                </div>
+                <div id="loc_div">
+                    <ul id="location">
+                        <li class="teal">━ India</li>
+                        <li class="gry">Uttar Pradesh</li>
+                        <li class="gry">Maharashtra</li>
+                        <li class="gry">Haryana</li>
+                        <li class="gry">Delhi</li>
+                        <li class="gry">Tamil Nadu</li>
+                        <li class="gry">Karnataka</li>
+                        <li class="gry">West Bengal</li>
+                        <li class="gry">Telangana</li>
+                        <li class="gry">Gujarat</li>
+                        <li class="gry">Kerala</li>
+                    </ul>
+                </div>
+                
+                <hr>
+
+                <h3 class="grey">Filters</h3>
+                <div class="cat_head" id="cattt_toggle">
+                    <h3>BUDGET</h3>
+                    <!-- <h2 class="budget_expand">^</h2> -->
+                    <i id='cattt' class="fa-solid fa-chevron-up"></i>
+                </div>
+                <div id="bud_div">
+                    <h4 class="grey">Choose a range below</h4>
+                    <div id="slider_price">
+                        <h3>0</h3>
+                        <h3>25000</h3>
+                    </div>
+                <!-- price slider                 -->
+                    <input type="range" min="0" max="25000" id="price_range">
+                </div>
+
+                <hr>
+
+                <div class="cat_head" id="catttt_toggle">
+                    <h3>BRAND</h3>
+                    <!-- <h2 class="brand_expand">^</h2> -->
+                    <i id='catttt' class="fa-solid fa-chevron-up"></i>
+                </div>
+                <div id="brand_div">
+                    <h3 id="pop_brands">Popular Brands</h3>
+                    <div class="brand_filter">
+                        <div class="chk_box"></div>
+                        <p>Maruti Suzuki</p>
+                    </div>
+                    <div class="brand_filter">
+                        <div class="chk_box"></div>
+                        <p>Hyundai</p>
+                    </div>
+                    <div class="brand_filter">
+                        <div class="chk_box"></div>
+                        <p>Mahindra</p>
+                    </div>
+                    <div class="brand_filter">
+                        <div class="chk_box"></div>
+                        <p>Tata</p>
+                    </div>
+                    <div class="brand_filter">
+                        <div class="chk_box"></div>
+                        <p>Honda</p>
+                    </div>
+                    <div class="brand_filter">
+                        <div class="chk_box"></div>
+                        <p>Toyota</p>
+                    </div>
+                </div>
+            </div>
+            
+        
+        </div>
+
+        <div id="mob_con"></div>
+
+    </div>
+</body>
+</html>
+
+
+<script src="cars.js"></script>
