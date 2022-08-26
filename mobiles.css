@@ -9,6 +9,7 @@ hr{
     width: 95%;
     margin: auto;
     display: flex;
+    gap: 20px;
 }
 #sidebar{
     width: 24%;
@@ -43,10 +44,10 @@ hr{
 #loc_div>ul{
     margin-top: 0px;
 }
-::-webkit-scrollbar {
+#loc_div::-webkit-scrollbar {
 width: 5px;
 }
-::-webkit-scrollbar-track {
+#loc_div::-webkit-scrollbar-track {
 background: #f1f1f1; 
 }
 ::-webkit-scrollbar-thumb {
@@ -95,4 +96,50 @@ p~h2{
 #slider_price{
     display: flex;
     justify-content: space-between;
+}
+#mob_con{
+    /* width: 70%; */
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,300px);
+    /* grid-template-rows: repeat(7,250px); */
+    gap: 15px;
+    /* justify-content: space-evenly; */
+}
+#mob_divs{
+    height: 250px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: 60%;
+}
+.img_div{
+    width: 100%;
+    height: 60%;
+}
+
+#mob_divs>.img_div>img{
+    width: 40%;
+    height: 100%;
+    margin-left: 30%;
+    /* margin: auto; */
+}
+.address_div{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;   
+}
+.heart{
+    position: relative;
+    left: 93%;
+    bottom: 100%;
+    font-size: 20px;
+}
+#load_btn{
+    width: 30%;
+    height: 40px;
+    margin-left: 140%;
 }
