@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="mobiles.css">
     <script src="https://kit.fontawesome.com/5d8d1b2757.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/87218ca82a.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="navbar"></div>
@@ -44,13 +45,13 @@
                 </div>
                 <div id="loc_div">
                     <ul id="location">
-                        <li class="teal">━ India</li>
-                        <li class="gry">Uttar Pradesh</li>
-                        <li class="gry">Maharashtra</li>
-                        <li class="gry">Haryana</li>
-                        <li class="gry">Delhi</li>
-                        <li class="gry">Tamil Nadu</li>
-                        <li class="gry">Karnataka</li>
+                        <li class="teal" id="loc_in">━ India</li>
+                        <li class="gry" id="loc_utt">Uttarakhand</li>
+                        <li class="gry" id="loc_bihar">Bihar</li>
+                        <li class="gry" id="loc_jh">Jharkhand</li>
+                        <li class="gry" id="loc_dl">Delhi</li>
+                        <li class="gry" id="loc_ga">Goa</li>
+                        <li class="gry" id="loc_kl">Kerala</li>
                         <li class="gry">West Bengal</li>
                         <li class="gry">Telangana</li>
                         <li class="gry">Gujarat</li>
@@ -70,10 +71,13 @@
                     <h4 class="grey">Choose a range below</h4>
                     <div id="slider_price">
                         <h3>0</h3>
-                        <h3>25000</h3>
+                        <h3 id="max_bud">12500</h3>
                     </div>
                 <!-- price slider                 -->
-                    <input type="range" min="0" max="25000" id="price_range">
+                    <div id="price_slider_div">
+                        <input type="range" min="0" max="25000" id="price_range">
+                        <button id="apply_price">Apply</button>
+                    </div>
                 </div>
 
                 <hr>
