@@ -232,34 +232,52 @@ let data=[
         image:"https://apollo-singapore.akamaized.net/v1/files/19jfgq4da9113-IN/image;s=300x600;q=60",
         price:"₹ 22,00,000",  
         km:"2 Bds - 2 Ba - 800 ft2",
-        modal:"22 Lakhs Villas nr Railway Station",
+        modal:"22 Lakhs Villas nr Station",
         location:"Parrys Broadway, Chennai",
         date:"Today"
 
 
     },
 ];
-for(var i=0;i<data.length;i++){
-    let div=document.createElement("div");
-    let image=document.createElement("img")
-    image.setAttribute("src",data[i].image)
+// for(var i=0;i<data.length;i++){
+    function append(data){
+        data.forEach(el=> {
+            let div=document.createElement("div");
+            div.addEventListener("click",function(){
+                xyz(el)
+         
+                 })
+           
+            let image=document.createElement("img")
+            image.setAttribute("src",el.image)
+        
+            let price=document.createElement("h2")
+            price.innerText=el.price;
+        
+            let km=document.createElement("p")
+            km.innerText=el.km;
+        
+            let modal=document.createElement("h5");
+            modal.innerText=el.modal;
+        
+            let location=document.createElement("span")
+            location.innerText=el.location;
+            let date=document.createElement("strong")
+            date.innerText=el.date
+        
+            div.append(image,price,km,modal,location,date)
+           
+        
+            document.querySelector("#fresh_bottom").append(div)
+            
+        });
 
-    let price=document.createElement("h2")
-    price.innerText=data[i].price;
+    }
+    append(data)
 
-    let km=document.createElement("p")
-    km.innerText=data[i].km;
-
-    let modal=document.createElement("h5");
-    modal.innerText=data[i].modal;
-
-    let location=document.createElement("span")
-    location.innerText=data[i].location;
-    let date=document.createElement("strong")
-    date.innerText=data[i].date
-
-    div.append(image,price,km,modal,location,date)
-    document.querySelector("#fresh_bottom").append(div)
+let xyz =(e)=> {
+    console.log(e)
+localStorage.setItem('home_data',JSON.stringify(e))
 }
 
 //******************************load more function******************************

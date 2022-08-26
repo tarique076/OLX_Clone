@@ -328,5 +328,57 @@ color: #6f8a94;
     justify-content: flex-end;
     padding-right: 7px;
 }
+/* **********************************footer img app********************************************* */
+.foot{
+    width: 100%;
+    height: 200px;
+    margin-top: 30px;
+    display: flex;
+    background-color: #ebeeef;
+    
+    
+}
+.foot>div{
+    width: 100%;
+}
+
+.foot>div>h1{
+    text-align: center;
+    color: #002f34;
+    font-size: 34px;
+    line-height: 40px;
+    font-weight: 700;
+}
+.foot>div>p{
+    font-size: 20px;
+    line-height: 24px;
+    padding-left: 70px;
+    color: #002f34;
+}
+.foot>div>h4{
+    padding-left: 40px;
+    color: #002f34;
+    margin-top: 50px;
+}
+.line{
+    
+    border-right:1px groove #6f8a94;
+    
+}
+.image{
+    width: 80%;
+    height: 40px;
+   margin: auto;
+   display: flex;
+   
+    gap:5px
+   
+}
+.image>img{
+    width: 90%;
+    gap:20px;
+    cursor: pointer;
+}
+
 
 
