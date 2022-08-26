@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
 }
 
 #navbar{
@@ -13,8 +12,9 @@
     padding: 10px;
 }
 
-#olx_logo img{
+.olx_logo img{
     width: 50px;
+    padding: 4px;
 }
 
 #nav_location, #search{
@@ -111,12 +111,13 @@
     background-color: none;
     border: none;
     font-weight: bold;
-    font-size: larger;
+    font-size: 16px;
     cursor: pointer;
 }
 
 #language > div:first-child i {
-    margin-left: 14px;
+    margin-left: 12px;
+    font-size: 22px;
 }
 
 #language_div{
@@ -126,7 +127,7 @@
     display: none;
     position: absolute;
     z-index: 5;
-    right: 60px;
+    right: 140px;
     top: 74px;
 
 }
@@ -143,7 +144,7 @@
 
 #nav_login h3{
     text-decoration: underline;
-    font-size: 16px;
+    font-size: 17px;
 }
 
 #nav_login:hover{
@@ -199,7 +200,7 @@
 /* dropdown css */
 #header_categories_data {
     position: absolute;
-    z-index: 5;
+    z-index: 4;
     background-color: white;
     display: none;
     padding: 0px 20px;
@@ -220,3 +221,209 @@
 #header_categories_data p{
     padding-bottom: 13px;
 }
+
+
+/* /////login///// */
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 6;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.8);
+    text-align: center;
+  }
+  
+  #slideshow img{
+    width: 80%;
+    margin: auto;
+    height: 40%;
+  }
+  
+  #close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 0;
+    left: 35%;
+    width: 32%;
+    height: 100%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  #enter_with {
+    z-index: 5;
+  }
+
+  .overlay-content button {
+    width: 100%;
+    padding: 10px 15px;
+    text-align: left;
+    font-weight: bolder;
+    font-size: 15px;
+    color: rgb(101, 101, 101);
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+  }
+
+  .overlay-content button:hover{
+    border: 4px solid rgb(28, 28, 28);
+  }
+
+  .overlay-content button i {
+    margin-right: 20px;
+    font-size: 20px;
+    color: rgb(101, 101, 101);
+  }
+
+  #p {
+    margin: 22px;
+  }
+
+  #p~a{
+    color: black;
+    font-weight: bold;
+  }
+
+  #p1,#p2{
+    position: absolute;
+    width: 70%;
+    font-size: 12px;
+    left: 60px;
+    bottom: 60;
+  }
+
+  #p2{
+    width: 80%;
+    bottom: 10;
+    left: 40px;
+    color: grey;
+  }
+
+  #p2 span{
+    color: blue;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+  
+
+  .enter_back{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .enter_back i {
+    font-size: 20px;
+    color: grey;
+  }
+  .enter_back i~a{
+    font-size: 50px;
+  }
+  #enter_phnno h1 ,#enter_otp h1 {
+    margin: 30px 0;
+    font-size: 20px;
+  }
+  #enter_input {
+    border: 1px solid;
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 15px;
+    border-radius: 4px ;
+  }
+  #enter_input:hover{
+    border: 3px solid;
+    border-color: 2a9d8f
+  }
+  #enter_button{
+    margin-top: 80px;
+    border: none;
+    text-align: center;
+    padding: 15px;
+    color: #9da3ae
+  }
+  #p3{
+    width: 90%;
+    margin: auto;
+    font-size: 12px;
+  }
+
+  #enter_otp_div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #enter_otp_div>i {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  #enter_otp_input {
+    display: flex;
+    justify-content:space-between;
+    text-align: center;
+    margin: 30px 0;
+  }
+
+  #enter_otp_input input {
+    width: 70px;
+    height: 60px;
+    text-align: center;
+    border: 2px solid;
+  }
+
+  #enter_otp_input input:hover {
+    border: 3px solid rgb(63, 171, 171);;
+  }
+
+  #p4 , #p5{
+    margin: 60px 0 30px 0;
+    color: blue;
+    text-align: left;
+  }
+
+  #p5 {
+    margin-top: 20px;
+  }
+
+  #profile{
+    display: none;
+  }
+  #profile img{
+    width: 28px;
+    height: 28px;
+  }
+  #profile i{
+    font-size: 18px;
+    padding: 8px;
+    color: rgb(50, 49, 49);;
+  }
+

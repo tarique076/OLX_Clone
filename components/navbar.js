@@ -1,17 +1,9 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="nav.css">
-    <script src="https://kit.fontawesome.com/5d8d1b2757.js" crossorigin="anonymous"></script>
-</head>
-<body>
+
+let navbar = () => {
+    return `
     <div id="navbar">
         <!--logo -->
-        <div class="olx_logo"><img src="./img/olx_logo.png" alt=""></div>
+        <div class="olx_logo"><img src="/img/olx_logo.png" alt=""></div>
         <!-- location -->
         <div id="nav_location">
             <div id="nav_location_input">
@@ -51,7 +43,7 @@
             <div id="enter_with" class="overlay-content">
                  <!-- Button to close the overlay navigation -->
                 <a href="javascript:void(0)" class="closebtn" id="close">&times;</a>
-                <div id="slideshow"><img src="./img/Screenshot (135).png" alt=""></div>
+                <div id="slideshow"><img src="/img/Screenshot (135).png" alt=""></div>
                 <button id="Continue_with_Phone"><i class="fa-solid fa-mobile-screen"></i>Continue with Phone</button>
                 <button><i class="fa-brands fa-google"></i>Continue with Google</button>
                 <p id="p">OR</p>
@@ -237,11 +229,7 @@
         <a href="./housespage/house.html"> For Rent: Houses & Apartments</a>   
     </div>
     <div id="add_footer"></div>
-</body>
-</html>
-<script type="module">
+    `
+}
 
-    import footer from './components/footer.js'
-    document.getElementById('add_footer').innerHTML = footer()
-</script>
-<script src="nav.js"></script>
+export default navbar;

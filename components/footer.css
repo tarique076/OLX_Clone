@@ -1,0 +1,60 @@
+*{
+    font-family: sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+#footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(189, 189, 189, 0.381);
+    padding:10px 60px 40px 40px;
+}
+
+#footer> div >div{
+    margin-top: 10px;
+}
+
+#footer> div >div a:hover{
+    color: rgb(0, 0, 0);
+}
+
+#footer div div a {
+    text-decoration: none;
+    font-size: 12px;
+    color: rgba(45, 45, 45, 0.861);
+}
+
+#social-media{
+    display: flex;
+    justify-content:flex-start;
+}
+
+.circle {
+    border: 1.5px solid rgba(33, 33, 33, 0.79);
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: rgba(33, 33, 33, 0.79);
+    margin-top: 0;
+    margin-right: 12px;
+}
+
+#footer> div:last-child > #app_store{
+    margin-top: 60px;
+}
+
+#bottom_footer{
+    padding:6px 40px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #0e313e;
+    color: white;
+}
+
+#bottom_footer h3{
+    font-size: 12px;
+    font-weight: 600;
+}
