@@ -91,8 +91,8 @@
 }
 
 .category i{
-    font-size: 15px;
-    transition: all 0.3s;
+    font-size: 20px;
+    transition: all 0.4s;
 }
 .pehla{
     width: 93%;
@@ -107,10 +107,281 @@
     font-size: 15px;
 }
 .dusra{
-    width: 93%;
+    width: 90%;
     margin: 10px auto;
-    background-color: #c793d2;
+    margin-bottom: 40px;
+    padding: 10px;
+    background-color: #c7dcff;
     cursor: pointer;
     display: flex;
     align-items: center;
+}
+.hidden{
+    display: none;
+}
+.rotate{
+    transform: rotate(180deg);
+}
+.category_bottom{
+    width: 93%;
+    margin: auto;
+    display: none;
+}
+.category_bottom_hidden{
+    display: block;
+    margin-bottom: 50px;
+}
+.location{
+    width: 93%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.location i{
+    font-size: 20px;
+    transition: all 0.4s;
+}
+.india{
+    width: 93%;
+    padding: 10px;
+    margin: 10px auto;
+    background-color: #c7dcff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+#state{
+    max-height: 250px;
+    cursor: pointer;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-bottom: 30px;
+}
+.addstate{
+    margin: auto;
+    width: 70%;
+}
+li{
+    list-style-type:none;
+}
+#state::-webkit-scrollbar {
+    width: 5px;
+}
+
+#state::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+
+#state::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+#filter{
+    width: 93%;
+    margin: 40px auto;
+}
+.chotaindia{
+    width: 93%;
+    margin: auto;
+    display: none;
+}
+.chotaindia_hidden{
+    display: block;
+    margin-bottom: 25px;
+}
+.brand_model{
+    width: 93%;
+    margin: auto;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.brand_model i{
+    font-size: 20px;
+    transform: rotate(0.4s);
+}
+.search_brand_model{
+    width: 93%;
+    margin: auto;
+    display: flex;
+    border: 1px solid black;
+    align-items: center;
+    margin: 20px auto;
+}
+.search_brand_model i{
+    font-size: 20px;
+    /* transform: rotate(180deg); */
+}
+.search_brand_model>input{
+    width: 90%;
+    padding: 10px;
+    border: none;
+}
+#allbrands{
+    width: 93%;
+    margin: auto;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+.brands{
+    width: 93%;
+    margin: auto;
+    margin-bottom: 30px;
+    max-height: 250px;
+    overflow: scroll;
+    overflow-x: hidden;
+    cursor: pointer;
+}
+#bawal_cheez_hai_be_pura_system_hil_jata_hai li{
+    margin: 10px auto;
+    list-style: square;
+}
+
+.brands::-webkit-scrollbar {
+    width: 5px;
+}
+
+.brands::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+
+.brands::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+#allmodels{
+    width: 93%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.models{
+    width: 93%;
+    margin: auto;
+    margin-bottom: 40px;
+    max-height: 250px;
+    overflow: scroll;
+    overflow-x: hidden;
+    cursor: pointer;
+}
+#khalnayak li{
+    margin: 10px auto;
+}
+.models::-webkit-scrollbar {
+    width: 5px;
+}
+
+.models::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+
+.models::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+.hide{
+    display: none;
+}
+
+#budget{
+    width: 93%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+#budget i{
+    font-size: 20px;
+}
+.budget_option{
+    width: 93%;
+    margin: auto;
+
+}
+
+.budget_more{
+    border: 1px solid black;
+    width: 100%;
+    /* height: 20px; */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+    
+}
+.choose_options{
+    margin: 20px auto;
+}
+#year{
+    width: 93%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+#year i{
+    font-size: 20px;
+}
+.year_more{
+    width: 93%;
+    margin: auto;
+}
+.year_options{
+    border: 1px solid black;
+    width: 100%;
+    /* height: 20px; */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+.choose_range{
+    margin: 20px auto;
+}
+
+#choose_year{
+    display: flex;
+    /* justify-content: space-around; */
+    padding: 10px;
+}
+#choose_year>div{
+    width: 25%;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+
+}
+.start_end_year{
+    border: 1px solid black;
+    /* padding: 10px; */
+}
+#apply{
+    width: 90%;
+    border-radius: 5px;
+}
+#apply_btn{
+    width: 90%;
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+    background-color: teal;
+}
+#owners{
+    width: 93%;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+#owners i{
+    font-size: 20px;
 }
