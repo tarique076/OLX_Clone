@@ -1,0 +1,162 @@
+ul{
+    list-style: none;
+    margin-top: -10px;
+}
+hr{
+    margin: 30px 0;
+}
+#container{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+}
+#sidebar{
+    width: 24%;
+}
+#categories{
+    margin-top: -20px;
+}
+.cat_head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.spin{ 
+  transform: rotate(180deg);
+}
+#all_cat{
+    list-style: none;
+    margin-left: -40px;
+}
+#mob_cat{
+    list-style: none;
+    margin-left: -30px;
+}
+#location_{
+    margin-left: -30px;
+}
+#loc_div{
+    height: 150px;
+    overflow-y: scroll;
+}
+#loc_div>ul{
+    margin-top: 0px;
+}
+#loc_div::-webkit-scrollbar {
+width: 5px;
+}
+#loc_div::-webkit-scrollbar-track {
+background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+background: #888; 
+}
+::-webkit-scrollbar-thumb:hover {
+background: #555; 
+}
+.teal{
+    background-color: skyblue;
+    padding: 4px;
+    font-weight: bold;
+}
+li{
+    margin-bottom: 5px;
+}
+.brand_filter{
+    margin: -10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.chk_box{
+    width: 20px;
+    height: 20px;
+    border: 2px solid grey;
+}
+p~h2{
+    margin-top: -10px;
+}
+.gry{
+    color: grey;
+}
+.gry:hover{
+    color: black;
+}
+#price_range{
+    width: 100%;
+}
+#price_slider_div{
+    display: flex;
+    gap: 10px;
+}
+#max_bud{
+    margin-right: 40px;
+}
+#apply_price{
+    padding: 7px 10px;
+    font-weight: bold;
+    border: none;
+    background-color: teal;
+    border-radius: 10%;
+}
+#apply_price:hover{
+    background-color: #555;
+}
+.grey{
+    color: grey;
+}
+.cat_head+.grey{
+    margin-top: -10px;
+}
+#slider_price{
+    display: flex;
+    justify-content: space-between;
+}
+#mob_con{
+    /* width: 70%; */
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,300px);
+    /* grid-template-rows: repeat(7,250px); */
+    gap: 15px;
+    /* justify-content: space-evenly; */
+}
+#mob_divs{
+    height: 250px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: 60%;
+}
+.img_div{
+    width: 100%;
+    height: 60%;
+}
+
+#mob_divs>.img_div>img{
+    width: 40%;
+    height: 100%;
+    margin-left: 30%;
+    /* margin: auto; */
+}
+.address_div{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;   
+}
+.heart{
+    position: relative;
+    left: 93%;
+    bottom: 100%;
+    font-size: 20px;
+}
+#load_btn{
+    width: 30%;
+    height: 40px;
+    margin-left: 140%;
+}
