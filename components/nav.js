@@ -36,7 +36,7 @@ function nav(){
         })
     })
     
-
+    let category = localStorage.getItem('category')
     loc_input.oninput = ()=>{
         locationData(loc_input.value)
     }
@@ -44,7 +44,7 @@ function nav(){
         try{
             // loc_input = document.getElementById('location').value
     
-            let res = await fetch(`https://myserverolx.herokuapp.com/items?location=${query}`);
+            let res = await fetch(`https://myserverolx.herokuapp.com/items?location=${query}&category=${category}`);
             let data = await res.json();
     
             console.log(data);
