@@ -1,6 +1,8 @@
 
 /* ***************************head imageg****************************** */
-
+*{
+    font-family: sans-serif;
+}
 .container{
     position: relative;
     width: 100%;

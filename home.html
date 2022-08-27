@@ -7,8 +7,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="stylesheet" href="home.css">
+    
 </head>
 <body onload="show()">
+  <div id="add_navbar"></div>
     
     <!-- ***************************header image******************************* -->
     <section>
@@ -277,7 +279,10 @@
     </div>
   </div>
           
-        
+       
+  
+  <div id="mob_con"></div>
+  <div id="add_footer"></div>
           
        
     
@@ -286,3 +291,16 @@
 
    
 <script src="home.js"></script>
+<script type="module">
+  import navbar from '../components/navbar.js';
+
+  document.getElementById('add_navbar').innerHTML=navbar();
+  import footer from '../components/footer.js';
+
+  document.getElementById('add_footer').innerHTML=footer();
+  import nav from '../components/nav.js';
+  nav();
+
+
+
+</script>
