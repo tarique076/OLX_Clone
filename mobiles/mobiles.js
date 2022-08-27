@@ -47,6 +47,10 @@ let append = (data)=>{
     for(let i =0; i<21*z; i++){
         let div=document.createElement('div');
         div.setAttribute('id', 'mob_divs');
+        div.addEventListener('click', function(){
+            localStorage.setItem('product_detail', JSON.stringify(data[i]));
+            window.location.href='../product/product.html'
+        })
 
         let img = document.createElement('img');
         img.src = data[i].image;
