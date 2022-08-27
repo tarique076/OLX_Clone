@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <title>chat box</title>
+    <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #f2f4f5;
+      }
+
+      .chat_box {
+        width: 800px;
+        margin: 20px auto;
+        border: 1px solid #d3d3d3;
+      }
+
+      .heading_chatbox img {
+        width: 60px;
+        border-radius: 50%;
+        margin-left: 15px;
+      }
+      .img_name_chat {
+        display: flex;
+        align-items: center;
+      }
+      .img_name_chat h2 {
+        margin-left: 15px;
+      }
+      .heading_chatbox {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid #d3d3d3;
+        padding: 4px 0;
+      }
+      .heading_chatbox i {
+        margin-right: 15px;
+        color: black;
+        cursor: pointer;
+        transition: all 0.3s;
+      }
+      .heading_chatbox i:hover {
+        margin-right: 13px;
+        font-size: 21px;
+      }
+
+      #see_chat {
+        background-color: #ebeeef;
+        height: 500px;
+        border: 1px solid #d3d3d3;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+        overflow: hidden;
+      }
+      #see_chat>h3 {
+        border-radius: 6px;
+        border: 1px solid grey;
+        background-color: white;
+        margin: 20px;
+        padding: 8px 10px;
+        font-size: 15px;
+        display: none;
+      }
+
+      .send_message input {
+        width: 100%;
+        padding: 15px 16px;
+        font-size: 16px;
+        border: none;
+        outline: none;
+      }
+      .send_message i {
+        color: white;
+        background-color: black;
+        padding: 12px;
+        font-size: 22px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .send_message {
+        display: flex;
+        justify-content: space-between;
+      }
+      #demo {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="chat_box">
+      <div class="heading_chatbox">
+        <div class="img_name_chat">
+          <img src="#" alt="profilepic" />
+          <h2>olx</h2>
+        </div>
+        <i class="fa-solid fa-x"></i>
+      </div>
+
+      <div id="see_chat">
+        <!-- <h3 id="message"></h3> -->
+      </div>
+
+      <div class="send_message">
+        <input type="text" placeholder="Type a message" id="text_message" />
+        <input type="text" placeholder="Type a message" id="demo" />
+        <i class="fa-solid fa-paper-plane" id="send_icon"></i>
+      </div>
+    </div>
+
+    <script>
+      let see_chat = document.getElementById("see_chat");
+      let send_icon = document.getElementById("send_icon");
+      let text_message = document.getElementById("text_message");
+      let demo = document.getElementById("demo");
+
+      send_icon.addEventListener("click", () => {
+        let message=document.createElement("h3");
+        message.innerHTML = text_message.value;
+        message.style = "display: block";
+        text_message.value = demo.value;
+        see_chat.append(message)
+      });
+    </script>
+  </body>
+</html>
