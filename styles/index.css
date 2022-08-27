@@ -206,19 +206,19 @@ color: #6f8a94;
     
 }
 #fresh_bottom>div{
-    border: 1px solid #6f8a94;;
+    /* border: 1px solid #6f8a94; */
     height: 300px;
     margin-left: 5px;
     margin-right: 5px;
     margin-bottom: 5px;
     border-radius: 2%;
     cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     
 }
-#fresh_bottom>div:hover{
+/* #fresh_bottom>div:hover{
     border: 1px solid skyblue;
-}
+} */
 #fresh_bottom>div img{
     display: block;
   margin-left: auto;

@@ -1,9 +1,4 @@
-localStorage.setItem('category', 'mobile')
-// let cat_expand = document.querySelector('.cat_expand');
-// let loc_expand = document.querySelector('.loc_expand');
-// let bud_expand = document.querySelector('.budget_expand');
-// let brand_expand = document.querySelector('.brand_expand');
-
+localStorage.setItem('category', 'scooter')
 let hide = document.getElementById('all_cat');
 let hide_loc = document.getElementById('loc_div');
 let hide_bud = document.getElementById('bud_div');
@@ -29,7 +24,7 @@ let z=1;
 
 let getData = async () =>{
     try{
-        let res = await fetch('https://myserverolx.herokuapp.com/items?category=mobile');
+        let res = await fetch(' https://myserverolx.herokuapp.com/items?category=scooter');
         let data = await res.json();
 
         console.log(data);
@@ -55,7 +50,6 @@ let append = (data)=>{
 
         let img = document.createElement('img');
         img.src = data[i].image;
-
         let img_div = document.createElement('div');
         img_div.setAttribute('class', 'img_div')
 
@@ -65,8 +59,10 @@ let append = (data)=>{
 
         img_div.append(img,heart)
 
-        let price = document.createElement('h3');
+        let price = document.createElement('h2');
+
         price.innerHTML = `₹ <span>${data[i].price}</span>`
+        price.style.margin = '10px'
 
         let brand = document.createElement('p');
         brand.setAttribute('class', 'brand_p')
@@ -101,7 +97,7 @@ let append = (data)=>{
 
 document.querySelector('#loc_utt').addEventListener('click',async function(){
     try{
-        let res = await fetch('https://myserverolx.herokuapp.com/items?category=mobile&location=Uttarakhand');
+        let res = await fetch('https://myserverolx.herokuapp.com/items?category=scooter&location=Uttarakhand');
         let data = await res.json();
 
         console.log(data);
@@ -114,7 +110,7 @@ document.querySelector('#loc_utt').addEventListener('click',async function(){
 
 document.querySelector('#loc_bihar').addEventListener('click',async function(){
     try{
-        let res = await fetch('https://myserverolx.herokuapp.com/items?category=mobile&location=Bihar');
+        let res = await fetch('https://myserverolx.herokuapp.com/items?category=scooter&location=Bihar');
         let data = await res.json();
 
         console.log(data);
@@ -127,7 +123,7 @@ document.querySelector('#loc_bihar').addEventListener('click',async function(){
 
 document.querySelector('#loc_jh').addEventListener('click',async function(){
     try{
-        let res = await fetch('https://myserverolx.herokuapp.com/items?category=mobile&location=Jharkhand');
+        let res = await fetch('https://myserverolx.herokuapp.com/items?category=scooter&location=Jharkhand');
         let data = await res.json();
 
         console.log(data);
@@ -140,7 +136,7 @@ document.querySelector('#loc_jh').addEventListener('click',async function(){
 
 document.querySelector('#loc_dl').addEventListener('click',async function(){
     try{
-        let res = await fetch('https://myserverolx.herokuapp.com/items?category=mobile&location=Delhi');
+        let res = await fetch('https://myserverolx.herokuapp.com/items?category=scooter&location=Delhi');
         let data = await res.json();
 
         console.log(data);
@@ -153,7 +149,7 @@ document.querySelector('#loc_dl').addEventListener('click',async function(){
 
 document.querySelector('#loc_kl').addEventListener('click',async function(){
     try{
-        let res = await fetch('https://myserverolx.herokuapp.com/items?category=mobile&location=Kerala');
+        let res = await fetch('https://myserverolx.herokuapp.com/items?category=scooter&location=Kerala');
         let data = await res.json();
 
         console.log(data);
@@ -166,7 +162,7 @@ document.querySelector('#loc_kl').addEventListener('click',async function(){
 
 document.querySelector('#loc_ga').addEventListener('click',async function(){
     try{
-        let res = await fetch('https://myserverolx.herokuapp.com/items?category=mobile&location=Goa');
+        let res = await fetch('https://myserverolx.herokuapp.com/items?category=scooter&location=Goa');
         let data = await res.json();
 
         console.log(data);
@@ -179,7 +175,7 @@ document.querySelector('#loc_ga').addEventListener('click',async function(){
 
 document.querySelector('#loc_in').addEventListener('click',async function(){
     try{
-        let res = await fetch('https://myserverolx.herokuapp.com/items?category=mobile');
+        let res = await fetch('https://myserverolx.herokuapp.com/items?category=scooter');
         let data = await res.json();
 
         console.log(data);
@@ -202,7 +198,7 @@ let filterPrice = () =>{
 }
 
 document.querySelector('#apply_price').addEventListener('click', async function(){
-    let res = await fetch('https://myserverolx.herokuapp.com/items?category=mobile');
+    let res = await fetch('https://myserverolx.herokuapp.com/items?category=scooter');
     let data = await res.json();
 
     console.log(data);
@@ -216,85 +212,24 @@ document.querySelector('#apply_price').addEventListener('click', async function(
 
 })
 
-// **************brand-filter*****************
-// let check=1;
+// sidebar===============>
 
-document.querySelector('#iphone').addEventListener('click', async function(){
-    // check++;
-    // if(check==1){
-    //     window.location.reload();
-    // }
-    // document.querySelector('#iphone').style.backgroundColor='black';
-    // document.querySelector('#iphone').innerHTML='<i class="fa-solid fa-check"></i>';
-    // document.querySelector('#iphone').style.color='white';
-    let res = await fetch('https://myserverolx.herokuapp.com/items?category=mobile');
-    let data = await res.json();
+let choose_head = document.querySelector('.choose_head');
+let choose_price_range = document.querySelector('.choose_price_range');
+let dusra = document.querySelector('.dusra');
 
-    console.log(data);
-    let filter_data = data.filter(function(el){
-        return el.brand.includes('iPhone')||el.brand.includes('Iphone')||el.brand.includes('I Phone') || el.brand.includes('IPHONE')
-    })
-    console.log(filter_data);
-    append(filter_data);
-    check=1;
-});
+choose_head.addEventListener('click',function(){
+    choose_price_range.style.display = (choose_price_range.style.display == 'none') ? 'flex' : 'none';
+    dusra.style.display = (dusra.style.display == 'none') ? 'block' : 'none';
+    document.getElementById('up').classList.toggle('spin')
+})
 
-document.querySelector('#samsung').addEventListener('click', async function(){
-    let res = await fetch('https://myserverolx.herokuapp.com/items?category=mobile');
-    let data = await res.json();
+let choose_head2 = document.querySelector('.choose_head2');
+let choose_price_range2 = document.querySelector('.choose_price_range2');
+let dusra2 = document.querySelector('.dusra2');
 
-    console.log(data);
-    let filter_data = data.filter(function(el){
-        return el.brand.includes('samsung')||el.brand.includes('Samsung')||el.brand.includes('SAMSUNG');
-    })
-    console.log(filter_data);
-    append(filter_data);
-});
-
-document.querySelector('#mi').addEventListener('click', async function(){
-    let res = await fetch('https://myserverolx.herokuapp.com/items?category=mobile');
-    let data = await res.json();
-
-    console.log(data);
-    let filter_data = data.filter(function(el){
-        return el.brand.includes('mi')||el.brand.includes('Mi')||el.brand.includes('Redmi')||el.brand.includes('REDMI')||el.brand.includes('MI');
-    })
-    console.log(filter_data);
-    append(filter_data);
-});
-
-document.querySelector('#vivo').addEventListener('click', async function(){
-    let res = await fetch('https://myserverolx.herokuapp.com/items?category=mobile');
-    let data = await res.json();
-
-    console.log(data);
-    let filter_data = data.filter(function(el){
-        return el.brand.includes('vivo')||el.brand.includes('VIVO')||el.brand.includes('Vivo');
-    })
-    console.log(filter_data);
-    append(filter_data);
-});
-
-document.querySelector('#oppo').addEventListener('click', async function(){
-    let res = await fetch('https://myserverolx.herokuapp.com/items?category=mobile');
-    let data = await res.json();
-
-    console.log(data);
-    let filter_data = data.filter(function(el){
-        return el.brand.includes('oppo')||el.brand.includes('Oppo')||el.brand.includes('OPPO');
-    })
-    console.log(filter_data);
-    append(filter_data);
-});
-
-document.querySelector('#oneplus').addEventListener('click', async function(){
-    let res = await fetch('https://myserverolx.herokuapp.com/items?category=mobile');
-    let data = await res.json();
-
-    console.log(data);
-    let filter_data = data.filter(function(el){
-        return el.brand.includes('oneplus')||el.brand.includes('Oneplus')||el.brand.includes('OnePlus')|| el.brand.includes('one plus')||el.brand.includes('One plus')||el.brand.includes('One Plus');
-    })
-    console.log(filter_data);
-    append(filter_data);
-});
+choose_head2.addEventListener('click',function(){
+    choose_price_range2.style.display = (choose_price_range2.style.display == 'none') ? 'flex' : 'none';
+    dusra2.style.display = (dusra2.style.display == 'none') ? 'block' : 'none';
+    document.getElementById('up2').classList.toggle('spin')
+})

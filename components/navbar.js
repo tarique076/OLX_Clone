@@ -14,10 +14,11 @@ let navbar = () => {
             </div>
             <div id="nav_location_location">
                 <div class="loc"><i class="fa-solid fa-location-dot"></i>Bihar</div>
-                <div class="loc"><i class="fa-solid fa-location-dot"></i>Mumbai</div>
+                <div class="loc"><i class="fa-solid fa-location-dot"></i>Jharkhand</div>
                 <div class="loc"><i class="fa-solid fa-location-dot"></i>Delhi</div>
                 <div class="loc"><i class="fa-solid fa-location-dot"></i>Odisha</div>
                 <div class="loc"><i class="fa-solid fa-location-dot"></i>Goa</div>
+                <div class="loc"><i class="fa-solid fa-location-dot"></i>Uttarakhand</div>
             </div>
         </div>
 

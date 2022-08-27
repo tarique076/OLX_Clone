@@ -1,113 +1,81 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
 
-
-
-/* navbar===========> */
-ul {
+ul{
     list-style: none;
     margin-top: -10px;
     cursor: pointer;
 }
-
-hr {
+hr{
     margin: 30px 0;
 }
-
-#container {
-    width: 95%;
+#container{
+    width: 98%;
     margin: auto;
     margin-top: 8rem;
     display: flex;
     gap: 20px;
-    /* border: 1px solid red; */
     align-items: flex-start;
 }
-
-#sidebar {
+#sidebar{
     width: 24%;
-    /* border: 2px solid red; */
 }
-
-#categories {
-    /* margin-top: -20px; */
-    /* border: 1px solid teal; */
-    margin:  auto;
+#categories{
+    margin-top: -20px;
 }
-i{
-    font-size: 20px;
-}
-.cat_head {
-    
+.cat_head{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    cursor: pointer;
-    margin: 20px auto;
 }
 
-.spin {
-    transform: rotate(180deg);
+.spin{ 
+  transform: rotate(180deg);
 }
-
-#all_cat {
+#all_cat{
     list-style: none;
-    
-    /* margin-left: -40px; */
+    margin-left: -40px;
 }
-
-/* /////////////////////////////////////////// */
-
-#all_cat h4{
-    padding-left: 0;
-}
-
-#mob_cat {
+#mob_cat{
     list-style: none;
-    /* margin-left: 10%; */
-    /* margin-left: -30px; */
+    margin-left: -30px;
 }
-
-li{
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: -20px;
+#locationn_{
+    margin-left: -30px;
 }
-
-#loc_div {
+#loc_div{
     height: 150px;
     overflow-y: scroll;
 }
-
-#loc_div>ul {
+#loc_div>ul{
     margin-top: 0px;
 }
-
 #loc_div::-webkit-scrollbar {
-    width: 5px;
+width: 5px;
 }
-
 #loc_div::-webkit-scrollbar-track {
-    background: #f1f1f1;
+background: #f1f1f1; 
 }
-
 ::-webkit-scrollbar-thumb {
-    background: #888;
+background: #888; 
 }
-
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+background: #555; 
 }
-
-.teal {
+.teal{
     background-color: skyblue;
-    padding: 8px;
+    padding: 4px;
     font-weight: bold;
-    /* margin-left: 10%; */
 }
-
-li {
+li{
     margin-bottom: 5px;
 }
+
+
 .brand_p{
-    margin: 10px auto;
+    margin: 20px auto;
 }
 #brand_div {
     max-height: 200px;
@@ -217,6 +185,7 @@ li {
 .gry {
     color: grey;
     margin: 15px auto;
+    margin-left: 10%;
 }
 
 .gry:hover {
@@ -258,76 +227,54 @@ li {
     justify-content: space-between;
 }
 
-#mob_con {
-    width: 76%;
+
+
+
+#mob_con{
+    /* width: 70%; */
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 20px;
-    /* align-items: flex-start; */
+    grid-template-columns: repeat(3,300px);
+    /* grid-template-rows: repeat(7,250px); */
+    gap: 15px;
+    /* justify-content: space-evenly; */
 }
-
-
-#mob_divs {
+#mob_divs{
     height: 250px;
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border: 1px solid grey;
     border-radius: 5px;
     padding: 10px;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
     line-height: 60%;
-    cursor: pointer;
 }
-
-.img_div {
+.img_div{
     width: 100%;
     height: 60%;
-    /* border: 1px solid red; */
-    text-align: center;
-    margin: 10px;
-    
 }
 
-#mob_divs>.img_div>img {
-    max-width: 90%;
+#mob_divs>.img_div>img{
+    width: 40%;
     height: 100%;
+    margin-left: 30%;
+    /* margin: auto; */
 }
-
-.address_div {
+.address_div{
     display: flex;
     justify-content: space-between;
-    font-size:  16px;
-    /* border: 1px solid teal; */
-    margin: 10px auto;
+    font-size: 12px;   
 }
-
-.heart {
+.heart{
     position: relative;
     left: 93%;
     bottom: 100%;
     font-size: 20px;
-    /* border: 1px solid red; */
 }
-#home_page_header{
-    margin-bottom: 250px;
-}
-#load_btn {
-    width: 40%;
-    height: 50px;
-    margin: auto;
-    margin-bottom: 70px;
+#load_btn{
+    width: 30%;
+    height: 40px;
     margin-left: 140%;
-    border: 3px solid teal;
-    cursor: pointer;
-    border-radius: 5px;
-    color: rgba(2, 85, 85, 0.961);
-    font-size: 15px;
-    font-weight: bolder;
 }
-#load_btn:hover{
-    border: 5px solid rgba(2, 85, 85, 0.961);
-}
-
