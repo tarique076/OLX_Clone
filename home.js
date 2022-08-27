@@ -49,12 +49,12 @@ function moveleft(){
 //*******************fresh**********************
 let data=[
     {
-        image:"https://apollo-singapore.akamaized.net/v1/files/tdxuqzk3k0la1-IN/image;s=300x600;q=60",
-        price:"₹ 8,45,396",
+        image:"https://apollo-singapore.akamaized.net/v1/files/xhuoxcv255ct3-IN/image;s=300x600;q=60",
+        price:"₹ 13,15,000",  
         km:"2017-46,986 km",
-        modal:"Honda City2015-2017",
-        location:"DLF City Phase 1, Gurgaon",
-        date:"Jul 22",
+        modal:"Kia Seltos,HTK Plus G",
+        location:"Anna Nagar, Chennai",
+        date:"Today"
     },
     {
         image:"https://apollo-singapore.akamaized.net/v1/files/qtepxdjat5zm1-IN/image;s=300x600;q=60",
@@ -115,12 +115,12 @@ let data=[
 
     },
     {
-        image:"https://apollo-singapore.akamaized.net/v1/files/xhuoxcv255ct3-IN/image;s=300x600;q=60",
-        price:"₹ 13,15,000",  
+        image:"https://apollo-singapore.akamaized.net/v1/files/tdxuqzk3k0la1-IN/image;s=300x600;q=60",
+        price:"₹ 8,45,396",
         km:"2017-46,986 km",
-        modal:"Kia Seltos,HTK Plus G",
-        location:"Anna Nagar, Chennai",
-        date:"Today"
+        modal:"Honda City2015-2017",
+        location:"DLF City Phase 1, Gurgaon",
+        date:"Jul 22",
 
 
     },
