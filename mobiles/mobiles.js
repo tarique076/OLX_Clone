@@ -47,6 +47,10 @@ let append = (data)=>{
     for(let i =0; i<21*z; i++){
         let div=document.createElement('div');
         div.setAttribute('id', 'mob_divs');
+        div.addEventListener('click', function(){
+            localStorage.setItem('product_detail', JSON.stringify(data[i]));
+            window.location.href='../product/product.html'
+        })
 
         let img = document.createElement('img');
         img.src = data[i].image;
@@ -210,3 +214,86 @@ document.querySelector('#apply_price').addEventListener('click', async function(
     append(filter_data);
 
 })
+
+// **************brand-filter*****************
+// let check=1;
+
+document.querySelector('#iphone').addEventListener('click', async function(){
+    // check++;
+    // if(check==1){
+    //     window.location.reload();
+    // }
+    // document.querySelector('#iphone').style.backgroundColor='black';
+    // document.querySelector('#iphone').innerHTML='<i class="fa-solid fa-check"></i>';
+    // document.querySelector('#iphone').style.color='white';
+    let res = await fetch('http://localhost:3000/items?category=mobile');
+    let data = await res.json();
+
+    console.log(data);
+    let filter_data = data.filter(function(el){
+        return el.brand.includes('iPhone')||el.brand.includes('Iphone')||el.brand.includes('I Phone') || el.brand.includes('IPHONE')
+    })
+    console.log(filter_data);
+    append(filter_data);
+    check=1;
+});
+
+document.querySelector('#samsung').addEventListener('click', async function(){
+    let res = await fetch('http://localhost:3000/items?category=mobile');
+    let data = await res.json();
+
+    console.log(data);
+    let filter_data = data.filter(function(el){
+        return el.brand.includes('samsung')||el.brand.includes('Samsung')||el.brand.includes('SAMSUNG');
+    })
+    console.log(filter_data);
+    append(filter_data);
+});
+
+document.querySelector('#mi').addEventListener('click', async function(){
+    let res = await fetch('http://localhost:3000/items?category=mobile');
+    let data = await res.json();
+
+    console.log(data);
+    let filter_data = data.filter(function(el){
+        return el.brand.includes('mi')||el.brand.includes('Mi')||el.brand.includes('Redmi')||el.brand.includes('REDMI')||el.brand.includes('MI');
+    })
+    console.log(filter_data);
+    append(filter_data);
+});
+
+document.querySelector('#vivo').addEventListener('click', async function(){
+    let res = await fetch('http://localhost:3000/items?category=mobile');
+    let data = await res.json();
+
+    console.log(data);
+    let filter_data = data.filter(function(el){
+        return el.brand.includes('vivo')||el.brand.includes('VIVO')||el.brand.includes('Vivo');
+    })
+    console.log(filter_data);
+    append(filter_data);
+});
+
+document.querySelector('#oppo').addEventListener('click', async function(){
+    let res = await fetch('http://localhost:3000/items?category=mobile');
+    let data = await res.json();
+
+    console.log(data);
+    let filter_data = data.filter(function(el){
+        return el.brand.includes('oppo')||el.brand.includes('Oppo')||el.brand.includes('OPPO');
+    })
+    console.log(filter_data);
+    append(filter_data);
+});
+
+document.querySelector('#oneplus').addEventListener('click', async function(){
+    let res = await fetch('http://localhost:3000/items?category=mobile');
+    let data = await res.json();
+
+    console.log(data);
+    let filter_data = data.filter(function(el){
+        return el.brand.includes('oneplus')||el.brand.includes('Oneplus')||el.brand.includes('OnePlus')|| el.brand.includes('one plus')||el.brand.includes('One plus')||el.brand.includes('One Plus');
+    })
+    console.log(filter_data);
+    append(filter_data);
+});

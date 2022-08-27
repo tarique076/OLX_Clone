@@ -94,9 +94,10 @@ let append = (data)=>{
         div.addEventListener('click',function(){
            
                 localStorage.setItem('product_detail',JSON.stringify(data[i]));
-                window.location.href = '../product/products.html'
+                window.location.href = '../product/product.html'
         });
         container.append(div);
+        
     }
     
     let load_more=document.createElement('button');
