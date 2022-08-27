@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="../celestial-star-9719/style/nav.css">
+    <link rel="stylesheet" href="../celestial-star-9719/style/footer.css">
+    
+</head>
+<body onload="show()">
+  <div id="add_navbar"></div>
+    
+    <!-- ***************************header image******************************* -->
+    <section id="section">
+        <div class="container">
+            <img src="./images/head-img.png" alt="olx autos">
+            <button class="btn"><a href="#">Sell Car</a></button>
+        </div>
+    </section>
+    <!-- ***************************advertise image******************************* -->
+    <section>
+        <div class="add_img">
+          <img src="./images/add-1.png" alt="">
+          <i class="fa-regular fa-rectangle-xmark" id="add_icon"></i>
+        </div>
+      </section>
+
+      <!-- *******************************slider********************************** -->
+    <section>
+        <div class="main">
+          <div class="main1">
+              <p>Based on your last search</p>
+              <h3><a href="#">View more</a></h3>
+          </div>
+          <div class="parent">
+              
+              <div id="leftarrow" onclick="moveleft()">
+                  <button>&lt;</button>
+              </div>
+              <div class="child" id="c1">
+                  <img src="./images/image-1.jpeg" alt="">
+                        <h2>₹ 6,50,000</h2>
+                        <p>2017 - 74,000 Km</p>
+                        <h5>Maruti Suzuki Vitara Brezza (2017)..</h5> 
+                        <h6>Jun 03</h6>
+              </div>
+              <div class="child" id="c2">
+                      <img src="./images/image-2.jpeg" alt="">
+                        <h2>₹ 17,75,000</h2>
+                        <p>2020 - 70,000 Km</p>
+                        <h5>Mahindra Scorpio S11,2020,Diesel..</h5> 
+                        <h6>AUG 11</h6>
+              </div>
+              <div class="child" id="c3">
+                  <img src="./images/image-3.jpeg" alt="">
+                        <h2>₹ 8,00,000</h2>
+                        <p>2019 - 40,400 Km</p>
+                        <h5>Maruti Suzuki Swift Dzire 2019 at fix.</h5> 
+                        <h6>TODAY</h6>
+              </div>
+              <div class="child" id="c4">
+                      <img src="./images/image-4.jpeg" alt="">
+                        <h2>₹ 3,61,000</h2>
+                        <p>2012 - 74,000 Km</p>
+                        <h5>Volkswagen Vento 2010-2013,Diesel..</h5> 
+                        <h6>TODAY</h6>
+              </div>
+              <div class="child" id="c5">
+                  <img src="./images/image-5.jpeg" alt="">
+                        <h2>₹ 28,25,000</h2>
+                        <p>2017 - 68,000 Km</p>
+                        <h5>Toyota Fortuner (2017),Diesel..</h5> 
+                        <h6>JUL 04</h6>
+              </div>
+              <div class="child" id="c6">
+                  <img src="./images/image-6.jpeg" alt="">
+                        <h2>₹ 4,51,000</h2>
+                        <p>2014 - 74,000 Km</p>
+                        <h5>Ford Ecosport (2017),Diesel..</h5> 
+                        <h6>TODAY</h6>
+              </div>
+              <div class="child" id="c7">
+                  <img src="./images/image-7.jpeg" alt="">
+                        <h2>₹ 2,90,000</h2>
+                        <p>2017 - 80,000 Km</p>
+                        <h5>Hyundai Eon (2013),Petrol..</h5> 
+                        <h6>TODAY</h6>
+              </div>
+              <div class="child" id="c8">
+                  <img src="./images/image-8.jpeg" alt="">
+                        <h2>₹ 3,61,000</h2>
+                        <p>2012 - 74,000 Km</p>
+                        <h5>Volkswagen Vento 2010-2013,Diesel..</h5> 
+                        <h6>TODAY</h6>
+              </div>
+              <div id="rightarrow" onclick="moveright()">
+                  <button>&gt;</button>
+              </div>
+          </div>
+      </div>
+      </section>
+  
+       <!-- **********************fresh recommedations************************* -->
+    <section>
+        <div class="fresh">
+          
+            <p>Fresh recommendations</p>
+          </div>
+      <section class="freshsection"><a href="home_product.html">
+        <div id="fresh_bottom"></div></a>
+      </section>
+    
+    <!-- ************************************load more and image**************************** -->
+    
+    <div class="loadmore">
+        <button id="load_more_id">Load More</button>
+        <div class="loadmore_product" id="loadmore_productid">
+          <div class="firstrow">
+            
+            <div class="box">
+              <img src="https://apollo-singapore.akamaized.net/v1/files/qtepxdjat5zm1-IN/image;s=300x600;q=60" alt="">
+              <h2>₹ 65,000</h2>
+              <p>2015 - 35,000 km</p>
+              <h5>ABS RS 200</h5>
+              <span>Mumbai, Maharashtra</span> 
+              <strong>Today</strong> 
+            </div>
+            <div class="box">
+              <img src="https://apollo-singapore.akamaized.net/v1/files/wuhycxrkbkip-IN/image;s=300x600;q=60" alt="">
+              <h2>₹ 60,50,00,396</h2>
+              <p>4+ Bds - 4+ Ba - 8000 ft2</p>
+              <h5>House for sale at perambur</h5>
+              <span>Perambur, Chennai, Tamil Nadu</span> 
+              <strong>Today</strong> 
+            </div>
+            <div class="box">
+              <img src="https://apollo-singapore.akamaized.net/v1/files/7uvmf7dl1v831-IN/image;s=300x600;q=60" alt="">
+              <h2>₹ 26,000</h2>
+              <p>Leptop Accessories</p>
+              <h5>Fresh Lenovo Thinkpad i7</h5>
+              <span>Chennai, Tamil Nadu</span> 
+              <strong>Today</strong> 
+            </div>
+            <div class="box">
+              <img src="https://apollo-singapore.akamaized.net/v1/files/vadtb83wymm92-IN/image;s=300x600;q=60" alt="">
+              <h2>₹ 800</h2>
+              <p>Drawing</p>
+              <h5>Pencil drawing</h5>
+              <span>Perambur Netal Garden</span> 
+              <strong>Today</strong> 
+            </div>
+            <div class="box">
+              <img src="https://apollo-singapore.akamaized.net/v1/files/mc2m1m0knkko2-IN/image;s=300x600;q=60" alt="">
+              <h2>₹ 37,000</h2>
+              <p>2017 - 45,000 km</p>
+              <h5>Yamaha Fz single owne</h5>
+              <span>Chennai Central</span> 
+              <strong>Today</strong> 
+            </div>
+            <div class="box">
+              <img src="https://apollo-singapore.akamaized.net/v1/files/jajuogi00odz-IN/image;s=300x600;q=60" alt="">
+              <h2>₹ 13,500,</h2>
+              <p>Mobile Accessories</p>
+              <h5>Sony Xperia 1 (4G VoLTE) </h5>
+              <span>Chennai Central</span> 
+              <strong>Today</strong> 
+            </div>
+            <div class="box">
+              <img src="https://apollo-singapore.akamaized.net/v1/files/pwg77qurdehi3-IN/image;s=300x600;q=60" alt="">
+              <h2>₹ 4,000</h2>
+              <p>Kichen Accessories</p>
+              <h5>Lakshmi wet grinder</h5>
+              <span>ICF Colony West Colony</span>
+              <strong>Today</strong> 
+            </div>
+            <div class="box">
+              <img src="https://apollo-singapore.akamaized.net/v1/files/493w2f90il3d2-IN/image;s=300x600;q=60" alt="">
+              <h2>₹ 2,500</h2>
+              <p>Bycycle</p>
+              <h5>BSA Tail Spin / BSA Toons</h5>
+              <span>Kolathur Annai</span> 
+              <strong>Aug20</strong> 
+            </div>
+            <div class="box">
+              <img src="https://apollo-singapore.akamaized.net/v1/files/onn5fcuxxso13-IN/image;s=300x600;q=60" alt="">
+              <h2>₹ 13,99,999</h2>
+              <p>2019 - 38,000 km</p>
+              <h5>Hyundai Creta,1.6 SX Automatic</h5>
+              <span>Model Town, Phagwara</span> 
+              <strong>Aug 22</strong> 
+            </div>
+            <div class="box">
+              <img src="https://apollo-singapore.akamaized.net/v1/files/k39s78pkk7jr1-IN/image;s=300x600;q=60" alt="">
+              <h2>₹ 299</h2>
+              <p>Wallet</p>
+              <h5>New pockets</h5>
+              <span>Samudrapur, Maharashtra</span> 
+              <strong>Today</strong> 
+            </div>
+            <div class="box">
+              <img src="https://apollo-singapore.akamaized.net/v1/files/0swxxa399xli1-IN/image;s=300x600;q=60" alt="">
+              <h2>₹ 1,000</h2>
+              <p>Kitchen Accessories</p>
+              <h5>Microwave Safe srt</h5>
+              <span>Chennai, Tamil Nadu</span> 
+              <strong>Jul 30</strong> 
+            </div>
+            <div class="box">
+              <img src="https://apollo-singapore.akamaized.net/v1/files/l36tl6qclbnt-IN/image;s=300x600;q=60" alt="">
+              <h2>₹ 500</h2>
+              <p>Watch</p>
+              <h5>New watches</h5>
+              <span>Samudrapur, Maharashtra</span> 
+              <strong>Today</strong> 
+            </div>
+            <div class="box">
+              <img src="https://apollo-singapore.akamaized.net/v1/files/bj76t4vhyw2f2-IN/image;s=300x600;q=60" alt="">
+              <h2>₹ 1,000</h2>
+              <p>Mens/Women Cloths</p>
+              <h5>New Trandy Couple Kurta</h5>
+              <span>Samudrapur, Maharashtra</span> 
+              <strong>Today</strong> 
+            </div>
+            <div class="box">
+              <img src="https://apollo-singapore.akamaized.net/v1/files/stej1o9i6y8n1-IN/image;s=300x600;q=60" alt="">
+              <h2>₹ 6,500,</h2>
+              <p>Furniture</p>
+              <h5>Only beds available </h5>
+              <span>Samudrapur, Maharashtra</span> 
+              <strong>Today</strong> 
+            </div>
+            <div class="box">
+              <img src="https://apollo-singapore.akamaized.net/v1/files/bs65a43vsvqe3-IN/image;s=300x600;q=60" alt="">
+              <h2>₹ 4,000</h2>
+              <p>Sport Accessories</p>
+              <h5>Badminton racket</h5>
+              <span>Avenue, Chennai</span>
+              <strong>Today</strong> 
+            </div>
+            <div class="box">
+              <img src="https://apollo-singapore.akamaized.net/v1/files/e5jf0tp3luzx-IN/image;s=300x600;q=60" alt="">
+              <h2>₹ 45,85,000</h2>
+              <p>Shops/Office</p>
+              <h5> Rental assurance @heart</h5>
+              <span>Arumbakkam, Chennai</span> 
+              <strong>Aug20</strong> 
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <!-- **************************************advertise************************************************ -->
+  <section>
+    <div class="add_img">
+      <img src="./images/add-2.png" alt="">
+      <i class="fa-regular fa-rectangle-xmark" id="add_icon"></i>
+    </div>
+  </section>
+
+  <!-- *********************************************footer image app********************************* -->
+  <div class="foot">
+    <div>
+    <img src="./images/footer-img.png">
+    </div>
+    <div class="line">
+      <h1>TRY THE OLX APP</h1>
+      <p>Buy, sell and find just about anything using 
+        the app on your mobile.</p>
+    </div>
+    <div>
+      <h4>GET YOUR APP TODAY</h4>
+      <div class="image">
+        <img src="https://statics.olx.in/external/base/img/appstore_2x.webp" alt="">
+        <img src="https://statics.olx.in/external/base/img/playstore_2x.webp" alt="">
+      </div>
+      
+    </div>
+  </div>
+          
+       
+  
+  <div id="mob_con"></div>
+  <div id="add_footer"></div>
+          
+       
+    
+</body>
+</html>
+
+   
+
+<script type="module">
+  import navbar from './components/navbar.js';
+
+  document.getElementById('add_navbar').innerHTML=navbar();
+  import footer from './components/footer.js';
+
+  document.getElementById('add_footer').innerHTML=footer();
+  import nav from './components/nav.js';
+  nav();
+
+
+
+</script>
+<script src="home.js"></script>
