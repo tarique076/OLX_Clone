@@ -1,3 +1,4 @@
+
 function nav(){
     let e = document.getElementById('nav_location_location');
     let loc_input = document.getElementById('location')
@@ -44,13 +45,13 @@ function nav(){
     // })
 
     loc_input.oninput = ()=>{
-        locationData(loc_input.value)
+        locationData()
     }
-    let locationData = async(x) => {
+    let locationData = async(loc_input) => {
         try{
-            // loc_input = document.getElementById('location').value
+            loc_input = document.getElementById('location').value
     
-            let res = await fetch(`http://localhost:3000/items?location=${x}`);
+            let res = await fetch(`http://localhost:3000/items?location=${loc_input}`);
             let data = await res.json();
     
             console.log(data);
