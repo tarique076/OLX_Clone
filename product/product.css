@@ -1,6 +1,8 @@
 #container{
     width: 90%;
     margin:auto;
+    margin-top: 10rem;
+    margin-bottom: 20px;
     display: flex;
     gap: 15px;
 }
@@ -32,17 +34,21 @@
     border-radius: 5px;
 }
 #flex_price{
+    /* height: 26px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+/* #price66,#price6{
+    font-size: 20px;
+} */
 #icons6{
     display: flex;
     gap: 10px;
     font-size: 20px;
 }
 #price_desc6{
-    margin-top: -15px;
+    margin-top: -5px;
     color: grey;
     font-weight: lighter;
 }

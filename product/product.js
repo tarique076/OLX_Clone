@@ -30,8 +30,7 @@ let price = document.querySelector('#price6');
 price.innerText = data.price;
 
 let price_desc = document.querySelector('#price_desc6');
-price_desc.innerText
-=`${data.years} yrs old ${data.brand}`;
+price_desc.innerText=`${data.years} yrs old ${data.brand}`;
 let loc = document.querySelector('#loc6');
 loc.innerText = data.address
 
