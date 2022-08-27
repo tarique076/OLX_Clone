@@ -4,7 +4,8 @@
 /* navbar===========> */
 ul {
     list-style: none;
-    /* margin-top: -10px; */
+    margin-top: -10px;
+    cursor: pointer;
 }
 
 hr {
@@ -52,6 +53,12 @@ i{
     /* margin-left: -40px; */
 }
 
+/* /////////////////////////////////////////// */
+
+#all_cat h4{
+    padding-left: 0;
+}
+
 #mob_cat {
     list-style: none;
     /* margin-left: 10%; */
@@ -60,6 +67,7 @@ i{
 
 li{
     font-family: Arial, Helvetica, sans-serif;
+    margin-left: -20px;
 }
 
 #loc_div {

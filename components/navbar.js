@@ -4,20 +4,20 @@ let navbar = () => {
     return `
     <div id="navbar">
         <!--logo -->
-        <div class="olx_logo"><img src="../style/img/olx_logo.png" alt=""></div>
+        <div class="olx_logo"><a href="index.html"><img src="./style/img/olx_logo.png" alt=""></a></div>
         <!-- location -->
         <div id="nav_location">
             <div id="nav_location_input">
                 <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="search" id="locationn" placeholder="Search city, Area or Loc...">
+                <input type="search" id="location" placeholder="Search city, Area or Loc...">
                 <i id="down" class="fa-solid fa-chevron-down"></i>
             </div>
             <div id="nav_location_location">
-                <div class="loc"><i class="fa-solid fa-location-dot"></i>India</div>
+                <div class="loc"><i class="fa-solid fa-location-dot"></i>Bihar</div>
                 <div class="loc"><i class="fa-solid fa-location-dot"></i>Mumbai</div>
                 <div class="loc"><i class="fa-solid fa-location-dot"></i>Delhi</div>
                 <div class="loc"><i class="fa-solid fa-location-dot"></i>Odisha</div>
-                <div class="loc"><i class="fa-solid fa-location-dot"></i>goa</div>
+                <div class="loc"><i class="fa-solid fa-location-dot"></i>Goa</div>
             </div>
         </div>
 
@@ -44,7 +44,7 @@ let navbar = () => {
             <div id="enter_with" class="overlay-content">
                  <!-- Button to close the overlay navigation -->
                 <a href="javascript:void(0)" class="closebtn" id="close">&times;</a>
-                <div id="slideshow"><img src="../style/img/Screenshot (135).png" alt=""></div>
+                <div id="slideshow"><img src="./style/img/Screenshot (135).png" alt=""></div>
                 <button id="Continue_with_Phone"><i class="fa-solid fa-mobile-screen"></i>Continue with Phone</button>
                 <button><i class="fa-brands fa-google"></i>Continue with Google</button>
                 <p id="p">OR</p>
@@ -59,7 +59,7 @@ let navbar = () => {
                     <i class="fa-solid fa-arrow-left enter_back_arrow"></i>
                     <a href="javascript:void(0)" class="closebtn" id="close">&times;</a>
                 </div>
-                <div class="olx_logo"><img src="./img/olx_logo.png" alt=""></div>
+                <div class="olx_logo"><img src="./style/img/olx_logo.png" alt=""></div>
                 <h1>Enter Your Phone Number</h1>
                 <input id="enter_input" minlength="10" type="tel" placeholder="+91  |  Phone Number">
                 <button id="enter_button">NEXT</button>
@@ -71,7 +71,7 @@ let navbar = () => {
                 <div class="enter_back">
                     <i class="fa-solid fa-arrow-left enter_back_arrow"></i>
                 </div>
-                <div class="olx_logo"><img src="./img/olx_logo.png" alt=""></div>
+                <div class="olx_logo"><img src="./style/img/olx_logo.png" alt=""></div>
                 <h1>Enter Verification code</h1>
                 <div id="enter_otp_div">
                     <p id='enter_otp_edit'></p>
@@ -91,7 +91,7 @@ let navbar = () => {
         <div id="profile">
             <i  class="fa-regular fa-comment"></i>
             <i  class="fa-regular fa-bell"></i>
-            <img src="https://pre00.deviantart.net/67de/th/pre/i/2013/005/7/9/circle_profile_by_pdogkasper-d5qkroq.png" alt="">
+            <img id='login_profile' src="" alt="">
             <i class="fa-solid fa-chevron-down"></i>
         </div>
 
@@ -111,10 +111,10 @@ let navbar = () => {
             <div id="header_categories_data">
                 <div id="categories_div1">
                     <div>
-                        <h3><a href="./carspage/cars.html"> OLX Autos (Cars)</a></h3>
+                        <h3><a href="cars.html"> OLX Autos (Cars)</a></h3>
                     </div>
                     <div>
-                        <h3><a href="./housespage/house.html">Properties</a></h3>
+                        <h3><a href="house.html">Properties</a></h3>
                         <p><a href="">For Sale: Houses & Apartments</a></p>
                         <p><a href="">For Rent: Houses & Apartments</a></p>
                         <p><a href="">Lands & Plots</a></p>
@@ -123,10 +123,10 @@ let navbar = () => {
                         <p><a href="">PG & Guest Houses</a></p>
                     </div>
                     <div>
-                        <h3><a href="./mobiles/mobiles.html">Mobiles</a></h3>
-                        <p><a href="">Mobiles Phones</a></p>
+                        <h3><a href="mobiles.html">Mobiles</a></h3>
+                        <p><a href="mobiles.html">Mobiles Phones</a></p>
                         <p><a href="">Accessories</a></p>
-                        <p><a href="">Tablets</a></p>
+                        <p><a href="mobiles.html">Tablets</a></p>
                     </div>
                 </div>
 
@@ -150,9 +150,9 @@ let navbar = () => {
                         <p><a href="">Other Jobs</a></p>
                     </div>
                     <div>
-                        <h3><a href="./bikespage/bikes.html">Bikes</a></h3>
+                        <h3><a href="bikes.html">Bikes</a></h3>
                         <p><a href="">Motorcycles</a></p>
-                        <p><a href="./scooterspage/scooters.html">Scooters</a></p>
+                        <p><a href="scooters.html">Scooters</a></p>
                         <p><a href="">Spare Parts</a></p>
                         <p><a href="">Bicycles</a></p>
                     </div>           
@@ -173,12 +173,12 @@ let navbar = () => {
                         <p><a href="">Washing Machines</a></p> 
                     </div>
                     <div>
-                       <h3><a href="./commercialpage/commercial.html">Commercial Vehicles & Spares</a></h3> 
+                       <h3><a href="commercial.html">Commercial Vehicles & Spares</a></h3> 
                        <p><a href="">Commercial & Other Vehicles</a> </p>
                        <p><a href="">Spare Parts</a></p> 
                     </div>
                     <div>
-                       <h3><a href="Furniture"></a></h3> 
+                       <h3><a href="">Furniture</a></h3> 
                        <p><a href="">Sofa & Dining</a></p> 
                        <p><a href="">Beds & Wardrobes</a></p>
                        <p><a href="">Home Decor & Garden</a> </p>
@@ -221,13 +221,13 @@ let navbar = () => {
                 </div>
             </div>
         </div>
-        <a href="./carspage/cars.html">Cars</a>
-        <a href="./bikespage/bikes.html"> Motorcycles</a>
-        <a href="./mobiles/mobiles.html"> Mobile Phones</a>
-        <a href="./housespage/house.html"> For Sale: Houses & Apartments</a>
-        <a href="./scooterspage/scooters.html">Scooters</a>
-        <a href="./commercialpage/commercial.html"> Commercial & Other Vehicles</a>
-        <a href="./housespage/house.html"> For Rent: Houses & Apartments</a>   
+        <a href="cars.html">Cars</a>
+        <a href="bikes.html"> Motorcycles</a>
+        <a href="mobiles.html"> Mobile Phones</a>
+        <a href="house.html"> For Sale: Houses & Apartments</a>
+        <a href="scooters.html">Scooters</a>
+        <a href="commercial.html"> Commercial & Other Vehicles</a>
+        <a href="house.html"> For Rent: Houses & Apartments</a>   
     </div>`
 }
 

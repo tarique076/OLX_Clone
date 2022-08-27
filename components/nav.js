@@ -1,5 +1,5 @@
-
 function nav(){
+
     let e = document.getElementById('nav_location_location');
     let loc_input = document.getElementById('location')
     let language = document.getElementById('language_div')
@@ -36,53 +36,26 @@ function nav(){
         })
     })
     
-    
-    
-    ////location input///////
-    
-    // document.getElementById('location').addEventListener('search',()=>{
-    //     locationData()
-    // })
 
     loc_input.oninput = ()=>{
-        locationData()
+        locationData(loc_input.value)
     }
-    let locationData = async(loc_input) => {
+    let locationData = async(query) => {
         try{
-            loc_input = document.getElementById('location').value
+            // loc_input = document.getElementById('location').value
     
-            let res = await fetch(`http://localhost:3000/items?location=${loc_input}`);
+            let res = await fetch(`https://myserverolx.herokuapp.com/items?location=${query}`);
             let data = await res.json();
     
             console.log(data);
-            appendData(data);
+            append(data);
+            console.log(append)
     
         }catch(error){
             console.log('error:',error)
         }
     }
-    
-    
-    
-    /////// search input//////
-    
-    // document.getElementById('inputtt').addEventListener('search',()=>{
-    //     searchData()
-    // })
-    // let searchData = async() => {
-    //     try{
-    //         let query = document.getElementById('inputtt').value
-    
-    //         let res = await fetch(`http://localhost:3000/items?q=${query}`);
-    //         let data = await res.json();
-    
-    //         console.log(data);
-    //         appendData(data);
-    
-    //     }catch(error){
-    //         console.log('error:',error)
-    //     }
-    // }
+
     
     
     document.getElementById('inputtt').addEventListener('search',()=>{
@@ -90,15 +63,15 @@ function nav(){
         let query = document.getElementById('inputtt').value
         console.log(query)
         if(query == 'car'){
-            window.location.href = '../carspage/cars.html'
-        }else if(query == ''){
-            window.location.href =  'mobile.html'
-        }else if(query == ''){
-            window.location.href =  'mobile.html'
-        }else if(query == ''){
-            window.location.href =  'mobile.html'
-        }else if(query == ''){
-            window.location.href =  'mobile.html'
+            window.location.href = 'cars.html'
+        }else if(query == 'mobile'){
+            window.location.href =  'mobiles.html'
+        }else if(query == 'scooter'){
+            window.location.href =  'scooters.html'
+        }else if(query == 'house'){
+            window.location.href =  'house.html'
+        }else if(query == 'bike'){
+            window.location.href =  'bikes.html'
         }
     })
     
@@ -152,15 +125,28 @@ function nav(){
     
     
     
+
+
       let otp1 = document.getElementById('enter_otp1');
       let otp2 = document.getElementById('enter_otp2');
       let otp3 = document.getElementById('enter_otp3');
       let otp4 = document.getElementById('enter_otp4');
     
+      let profile= {
+        url:'https://pre00.deviantart.net/67de/th/pre/i/2013/005/7/9/circle_profile_by_pdogkasper-d5qkroq.png'
+     } 
+
+     let login = JSON.parse(localStorage.getItem('login'))
+    function check(){ 
+        if(login !== null ){
+            console.log(login)
+            login_append()
+        }
+    } check()
+
       otp4.oninput = ()=> {
         checkotp()
       }
-    
       let checkotp = ()=> {
         console.log('not vaeriy')
         if(otp1.value == '1' && otp2.value == '2' && otp3.value == '3' && otp4.value == '4' ){
@@ -169,9 +155,10 @@ function nav(){
             otp2.value = ''
             otp3.value = ''
             otp4.value = ''
-            localStorage.setItem('login',JSON.stringify(true));
-            login() 
-    
+
+            localStorage.setItem('login',JSON.stringify(profile));
+            login_append()
+           
           }else{
             document.getElementById('wrong_otp').innerText = 'Incorrect OTP'
             setTimeout(()=>{
@@ -180,23 +167,21 @@ function nav(){
             
           }
       }
+
+      function login_append(){
+        document.getElementById('nav_login').style.display = 'none'
+        document.getElementById('profile').style.display = 'flex'
+        document.getElementById('profile').style.alignItems = 'center'
+        let login_profile = document.getElementById('login_profile')
+        login_profile.src = profile.url;
+        // window.location.onload()
+     }
      
-      function login() {
-        let login = JSON.parse(localStorage.getItem('login'))
-        if(login == true){
-            document.getElementById('nav_login').style.display = 'none'
-            document.getElementById('profile').style.display = 'flex'
-            document.getElementById('profile').style.alignItems = 'center'
-        }
-      }
-    }
-//hiding and toggling of location division//
+}
+    
 
-  export default nav;
-
- 
-
-
+  export default nav 
+  
 
 
 
