@@ -1,6 +1,12 @@
-import {navbar} from '../mycomponents/import.js'
-let r = navbar()
-document.getElementById('navbar').innerHTML = r;
+// import {navbar} from '../mycomponents/import.js'
+// import {header} from '../mycomponents/import.js'
+// import {footer} from '../mycomponents/import.js'
+// let r = navbar()
+// let s = header();
+// let t = footer();
+// document.getElementById('navbar').innerHTML = r;
+// document.getElementById('footer').innerHTML = t;
+// document.getElementById('home_page_header').innerHTML = s;
 
 
 
@@ -63,8 +69,10 @@ let append = (data)=>{
 
         img_div.append(img,heart)
 
-        let price = document.createElement('h3');
+        let price = document.createElement('h2');
+
         price.innerHTML = `₹ <span>${data[i].price}</span>`
+        price.style.margin = '10px'
 
         let brand = document.createElement('p');
         brand.setAttribute('class', 'brand_p')
@@ -82,8 +90,15 @@ let append = (data)=>{
         add_div.append(address,date);
 
         div.append(img_div,price,brand,add_div)
+        // div.style.border="2px solid red"
+        div.addEventListener('click',function(){
+           
+                localStorage.setItem('product_detail',JSON.stringify(data[i]));
+                window.location.href = 'products.html'
+        });
         container.append(div);
     }
+    
     let load_more=document.createElement('button');
     load_more.innerText='Load More'
     load_more.setAttribute('id','load_btn')
