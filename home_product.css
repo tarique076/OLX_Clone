@@ -1,6 +1,13 @@
 body{
     background-color: #ebeeef;
 }
+*{
+    font-family: sans-serif;
+}
+
+#section{
+    margin-top: 160px;
+}
     
 .add_img img{
     width: 800px;
@@ -197,7 +204,9 @@ body{
     padding-left: 15px;
     cursor: pointer;
 }
-
+#footer_sec{
+    margin-bottom: 100px;
+}
 
    
 

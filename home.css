@@ -3,6 +3,10 @@
 *{
     font-family: sans-serif;
 }
+
+#section{
+    margin-top: 120px;
+}
 .container{
     position: relative;
     width: 100%;

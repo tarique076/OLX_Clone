@@ -229,7 +229,7 @@ let navbar = () => {
         <a href="./commercialpage/commercial.html"> Commercial & Other Vehicles</a>
         <a href="./housespage/house.html"> For Rent: Houses & Apartments</a>   
     </div>
-    <div id="add_footer"></div>
+   
     `
 }
 

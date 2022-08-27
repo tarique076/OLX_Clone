@@ -7,16 +7,16 @@
     <title>product</title>
     <link rel="stylesheet" href="home_product.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-/>
+    <link rel="stylesheet" href="../celestial-star-9719/style/nav.css">
+    <link rel="stylesheet" href="../celestial-star-9719/style/footer.css">
+    
 </head>
 <body>
-    
+  <div id="add_navbar"></div>
 
     <!-- ***************************advertise************************* -->
-    <section>
+
+    <section id="section">
         <div class="add_img">
           <img src="./images/add-3.png" alt="">
           <i class="fa-regular fa-rectangle-xmark" id="add_icon"></i>
@@ -71,15 +71,29 @@
 
       <!-- ************************advertise**************** -->
       
-      <section>
+      <section id="footer_sec">
         <div class="add_img">
           <img src="./images/add-1.png" alt="">
           <i class="fa-regular fa-rectangle-xmark" id="add_icon"></i>
         </div>
       </section>
       
-
+      <div id="add_footer"></div>
 </body>
 </html>
+
+<script type="module">
+  import navbar from './components/navbar.js';
+
+  document.getElementById('add_navbar').innerHTML=navbar();
+  import footer from './components/footer.js';
+
+  document.getElementById('add_footer').innerHTML=footer();
+  import nav from './components/nav.js';
+  nav();
+
+
+
+</script>
 
 <script src="home_product.js"></script>

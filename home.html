@@ -7,13 +7,15 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="../celestial-star-9719/style/nav.css">
+    <link rel="stylesheet" href="../celestial-star-9719/style/footer.css">
     
 </head>
 <body onload="show()">
   <div id="add_navbar"></div>
     
     <!-- ***************************header image******************************* -->
-    <section>
+    <section id="section">
         <div class="container">
             <img src="./images/head-img.png" alt="olx autos">
             <button class="btn"><a href="#">Sell Car</a></button>
@@ -290,17 +292,18 @@
 </html>
 
    
-<script src="home.js"></script>
+
 <script type="module">
-  import navbar from '../components/navbar.js';
+  import navbar from './components/navbar.js';
 
   document.getElementById('add_navbar').innerHTML=navbar();
-  import footer from '../components/footer.js';
+  import footer from './components/footer.js';
 
   document.getElementById('add_footer').innerHTML=footer();
-  import nav from '../components/nav.js';
+  import nav from './components/nav.js';
   nav();
 
 
 
 </script>
+<script src="home.js"></script>
