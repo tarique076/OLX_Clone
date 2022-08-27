@@ -1,15 +1,20 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
 #navbar{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: rgba(215, 215, 220, 0.726);
-    padding: 10px;
+    background-color: rgb(225, 224, 224);
+    top: 0;
+    padding: 6px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    
 }
 
 .olx_logo img{
@@ -129,6 +134,7 @@
     z-index: 5;
     right: 140px;
     top: 74px;
+    background-color: white;
 
 }
 #language_div h3{
@@ -158,8 +164,9 @@
     border-radius: 34px;
     background-color: white;
     cursor: pointer;
-    padding: 8px 12px;
+    padding: 0 13px;
     display: flex;
+    align-items: center;
     border-color:rgb(76, 241, 186) rgb(59, 59, 227) blue rgb(250, 213, 7);
 }
 
@@ -169,19 +176,24 @@
 
 #nav_sell button h3{
     font-size: 16px;
-    padding: 0 5px;
+    padding: 0 2px;
+    margin: 9px 0;
 }
 
 
 
 #home_page_header{
     cursor: pointer;
-    margin-top: 5px;
+    /* margin-top: 5px; */
     box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
     display: flex;
     justify-content:space-around;
-    padding: 5px 150px 5px 5px;
+    padding: 3px 150px 3px 5px;
     align-items: center;
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    z-index: 1
 }
 
 #down3 {
