@@ -1,14 +1,15 @@
 
+
 let navbar = () => {
     return `
     <div id="navbar">
         <!--logo -->
-        <div class="olx_logo"><img src="/img/olx_logo.png" alt=""></div>
+        <div class="olx_logo"><img src="../style/img/olx_logo.png" alt=""></div>
         <!-- location -->
         <div id="nav_location">
             <div id="nav_location_input">
                 <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="search" id="location" placeholder="Search city, Area or Loc...">
+                <input type="search" id="locationn" placeholder="Search city, Area or Loc...">
                 <i id="down" class="fa-solid fa-chevron-down"></i>
             </div>
             <div id="nav_location_location">
@@ -43,7 +44,7 @@ let navbar = () => {
             <div id="enter_with" class="overlay-content">
                  <!-- Button to close the overlay navigation -->
                 <a href="javascript:void(0)" class="closebtn" id="close">&times;</a>
-                <div id="slideshow"><img src="/img/Screenshot (135).png" alt=""></div>
+                <div id="slideshow"><img src="../style/img/Screenshot (135).png" alt=""></div>
                 <button id="Continue_with_Phone"><i class="fa-solid fa-mobile-screen"></i>Continue with Phone</button>
                 <button><i class="fa-brands fa-google"></i>Continue with Google</button>
                 <p id="p">OR</p>
