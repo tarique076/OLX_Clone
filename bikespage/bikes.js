@@ -1,8 +1,11 @@
+import {navbar} from '../mycomponents/import.js'
+let r = navbar()
+document.getElementById('navbar').innerHTML = r;
 
-// let cat_expand = document.querySelector('.cat_expand');
-// let loc_expand = document.querySelector('.loc_expand');
-// let bud_expand = document.querySelector('.budget_expand');
-// let brand_expand = document.querySelector('.brand_expand');
+
+
+
+
 
 let hide = document.getElementById('all_cat');
 let hide_loc = document.getElementById('loc_div');
@@ -92,8 +95,143 @@ let append = (data)=>{
     })
 }
 
-// function load_more(){
-//     z=z++;
-//     console.log('mnjkk');
-//     getData();
-// }
+// **********location-filters************
+
+document.querySelector('#loc_utt').addEventListener('click',async function(){
+    try{
+        let res = await fetch('http://localhost:3000/items?category=bike&location=Uttarakhand');
+        let data = await res.json();
+
+        console.log(data);
+        append(data);
+
+    }catch(err){
+        console.log(err)
+    }
+});
+
+document.querySelector('#loc_bihar').addEventListener('click',async function(){
+    try{
+        let res = await fetch('http://localhost:3000/items?category=bike&location=Bihar');
+        let data = await res.json();
+
+        console.log(data);
+        append(data);
+
+    }catch(err){
+        console.log(err)
+    }
+});
+
+document.querySelector('#loc_jh').addEventListener('click',async function(){
+    try{
+        let res = await fetch('http://localhost:3000/items?category=bike&location=Jharkhand');
+        let data = await res.json();
+
+        console.log(data);
+        append(data);
+
+    }catch(err){
+        console.log(err)
+    }
+});
+
+document.querySelector('#loc_dl').addEventListener('click',async function(){
+    try{
+        let res = await fetch('http://localhost:3000/items?category=bike&location=Delhi');
+        let data = await res.json();
+
+        console.log(data);
+        append(data);
+
+    }catch(err){
+        console.log(err)
+    }
+});
+
+document.querySelector('#loc_kl').addEventListener('click',async function(){
+    try{
+        let res = await fetch('http://localhost:3000/items?category=bike&location=Kerala');
+        let data = await res.json();
+
+        console.log(data);
+        append(data);
+
+    }catch(err){
+        console.log(err)
+    }
+});
+
+document.querySelector('#loc_ga').addEventListener('click',async function(){
+    try{
+        let res = await fetch('http://localhost:3000/items?category=bike&location=Goa');
+        let data = await res.json();
+
+        console.log(data);
+        append(data);
+
+    }catch(err){
+        console.log(err)
+    }
+});
+
+document.querySelector('#loc_in').addEventListener('click',async function(){
+    try{
+        let res = await fetch('http://localhost:3000/items?category=bike');
+        let data = await res.json();
+
+        console.log(data);
+        append(data);
+
+    }catch(err){
+        console.log(err)
+    }
+});
+
+// ************Budget-Filter************
+
+let slider_price = document.querySelector('#price_range');
+slider_price.onchange = function(){
+    filterPrice();
+}
+
+let filterPrice = () =>{
+    document.querySelector('#max_bud').innerText=(slider_price.value);
+}
+
+document.querySelector('#apply_price').addEventListener('click', async function(){
+    let res = await fetch('http://localhost:3000/items?category=bike');
+    let data = await res.json();
+
+    console.log(data);
+    let filter_data=data.filter(function(el){
+       return +(el.price) <= +(slider_price.value);
+    })
+    console.log(filter_data);
+    console.log(slider_price.value);
+    // if(slider_price.value<)
+    append(filter_data);
+
+})
+
+// sidebar===============>
+
+let choose_head = document.querySelector('.choose_head');
+let choose_price_range = document.querySelector('.choose_price_range');
+let dusra = document.querySelector('.dusra');
+
+choose_head.addEventListener('click',function(){
+    choose_price_range.style.display = (choose_price_range.style.display == 'none') ? 'flex' : 'none';
+    dusra.style.display = (dusra.style.display == 'none') ? 'block' : 'none';
+    document.getElementById('up').classList.toggle('spin')
+})
+
+let choose_head2 = document.querySelector('.choose_head2');
+let choose_price_range2 = document.querySelector('.choose_price_range2');
+let dusra2 = document.querySelector('.dusra2');
+
+choose_head2.addEventListener('click',function(){
+    choose_price_range2.style.display = (choose_price_range2.style.display == 'none') ? 'flex' : 'none';
+    dusra2.style.display = (dusra2.style.display == 'none') ? 'block' : 'none';
+    document.getElementById('up2').classList.toggle('spin')
+})
