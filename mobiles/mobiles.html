@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="mobiles.css">
+    <link rel="stylesheet" href="./mobiles.css">
+    <link rel="stylesheet" href="../style/nav.css">
+    <link rel="stylesheet" href="../style/footer.css">
     <script src="https://kit.fontawesome.com/5d8d1b2757.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/87218ca82a.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="navbar"></div>
+    <div id="add_navbar"></div>
 
     <div id="container">
         
@@ -44,7 +46,7 @@
                     <i id='catt' class="fa-solid fa-chevron-up"></i>
                 </div>
                 <div id="loc_div">
-                    <ul id="location">
+                    <ul id="locationn_">
                         <li class="teal" id="loc_in">━ India</li>
                         <li class="gry" id="loc_utt">Uttarakhand</li>
                         <li class="gry" id="loc_bihar">Bihar</li>
@@ -90,28 +92,28 @@
                 <div id="brand_div">
                     <h3 id="pop_brands">Popular Brands</h3>
                     <div class="brand_filter">
-                        <div class="chk_box"></div>
+                        <div class="chk_box" id="iphone"></div>
                         <p>iPhone</p>
                     </div>
                     <div class="brand_filter">
-                        <div class="chk_box"></div>
+                        <div class="chk_box" id="samsung"></div>
                         <p>Samsung</p>
                     </div>
                     <div class="brand_filter">
-                        <div class="chk_box"></div>
+                        <div class="chk_box" id="mi"></div>
                         <p>Mi</p>
                     </div>
                     <div class="brand_filter">
-                        <div class="chk_box"></div>
+                        <div class="chk_box" id="vivo"></div>
                         <p>Vivo</p>
                     </div>
                     <div class="brand_filter">
-                        <div class="chk_box"></div>
+                        <div class="chk_box" id="oppo"></div>
                         <p>Oppo</p>
                     </div>
                     <div class="brand_filter">
-                        <div class="chk_box"></div>
-                        <p>Realme</p>
+                        <div class="chk_box" id="oneplus"></div>
+                        <p>OnePlus</p>
                     </div>
                 </div>
             </div>
@@ -122,7 +124,24 @@
         <div id="mob_con"></div>
 
     </div>
+
+    <div id="add_footer"></div>
 </body>
 </html>
+<script type="module">
+    import navbar from '../components/navbar.js';
+    // console.log(navbar);
+
+    document.getElementById('add_navbar').innerHTML= navbar();
+
+    import footer from '../components/footer.js';
+    // console.log(navbar);
+
+    document.getElementById('add_footer').innerHTML= footer();
+    // container.innerHTML= navbar();
+
+    import nav from '../components/nav.js';
+    nav();
+</script>
 
 <script src="mobiles.js"></script>
