@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="product.css">
-    <link rel="stylesheet" href="../style/nav.css">
-    <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="./styles/product.css">
+    <link rel="stylesheet" href="./style/nav.css">
+    <link rel="stylesheet" href="./style/footer.css">
     <script src="https://kit.fontawesome.com/87218ca82a.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -69,19 +69,19 @@
 </html>
 
 <script type="module">
-    import navbar from '../components/navbar.js';
+    import navbar from './components/navbar.js';
     // console.log(navbar);
 
     document.getElementById('add_navbar').innerHTML= navbar();
 
-    import footer from '../components/footer.js';
+    import footer from './components/footer.js';
     // console.log(navbar);
 
     document.getElementById('add_footer').innerHTML= footer();
     // container.innerHTML= navbar();
 
-    import nav from '../components/nav.js';
+    import nav from './components/nav.js';
     nav();
 </script>
 
-<script src="product.js"></script>
+<script src="./scripts/product.js"></script>

@@ -41,7 +41,7 @@ function moveleft(){
     }
     }
     else{
-        retuen
+        return
     }
 
 }
