@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Commercial & Other Vehicles</title>
+    <title>www.olx.in/motorcycles_c81</title>
     <link rel="stylesheet" href="commercial.css">
+    <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="../style/nav.css">
     <script src="https://kit.fontawesome.com/5d8d1b2757.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/87218ca82a.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <div id="navbar"></div>
+   <div id="add_navbar"></div>
 
     <div id="container">
-        
+
         <div id="sidebar">
-            <p class="gry">Home / Mobiles</p>
-            <h2>Commercial & Other Vehicles</h2>
-            
+            <p class="gry">Home / Bikes</p>
+            <h2>Used Bikes in India</h2>
+
             <div id="categories">
                 <div class="cat_head" id="cat_toggle">
-                    <h3 >CATEGORIES</h3>
+                    <h3>CATEGORIES</h3>
                     <!-- <h2 class="cat_expand">^</h2> -->
                     <i id='cat' class="fa-solid fa-chevron-up"></i>
                 </div>
@@ -28,37 +32,39 @@
                     <li>
                         <h4>━ All Categories</h4>
                         <ul id="mob_cat">
-                            <li class="gry">━ Commercial Vehicles & Spares</li>
-                            <li class="teal">Commercial & Other Vehicles</li>
-                            <li class="gry">Spare Parts</li>
-                            <li class="gry">Others</li>
+                            <li class="gry">━ Bikes</li>
+                            <li class="teal">Motorcycles(15,234)</li>
+                            <li class="gry">Scooters(34,987)</li>
+                            <li class="gry">Spareparts(23,456)</li>
                         </ul>
                     </li>
                 </ul>
-                
+
                 <hr>
 
                 <div class="cat_head" id="catt_toggle">
-                    <div><h3>LOCATIONS</h3></div>
+                    <div>
+                        <h3>LOCATIONS</h3>
+                    </div>
                     <!-- <div><h2 class="loc_expand">^</h2></div> -->
                     <i id='catt' class="fa-solid fa-chevron-up"></i>
                 </div>
                 <div id="loc_div">
                     <ul id="location">
-                        <li class="teal">━ India</li>
-                        <li class="gry">Uttar Pradesh</li>
-                        <li class="gry">Maharashtra</li>
-                        <li class="gry">Haryana</li>
-                        <li class="gry">Delhi</li>
-                        <li class="gry">Tamil Nadu</li>
-                        <li class="gry">Karnataka</li>
+                        <li class="teal" id="loc_in">━ India</li>
+                        <li class="gry" id="loc_utt">Uttarakhand</li>
+                        <li class="gry" id="loc_bihar">Bihar</li>
+                        <li class="gry" id="loc_jh">Jharkhand</li>
+                        <li class="gry" id="loc_dl">Delhi</li>
+                        <li class="gry" id="loc_ga">Goa</li>
+                        <li class="gry" id="loc_kl">Kerala</li>
                         <li class="gry">West Bengal</li>
                         <li class="gry">Telangana</li>
                         <li class="gry">Gujarat</li>
                         <li class="gry">Kerala</li>
                     </ul>
                 </div>
-                
+
                 <hr>
 
                 <h3 class="grey">Filters</h3>
@@ -71,25 +77,109 @@
                     <h4 class="grey">Choose a range below</h4>
                     <div id="slider_price">
                         <h3>0</h3>
-                        <h3>25000</h3>
+                        <h3 id="max_bud">100000</h3>
                     </div>
-                <!-- price slider                 -->
-                    <input type="range" min="0" max="25000" id="price_range">
+                    <!-- price slider                 -->
+                    <div id="price_slider_div">
+                        <input type="range" min="0" max="200000" id="price_range">
+                        <button id="apply_price">Apply</button>
+                    </div>
                 </div>
 
                 <hr>
 
               
+                
+
+                <div class="km_driven">
+                    <div class="choose_head">
+                        <h3>KM DRIVEN</h3>
+                        <i id="up" class="fa-solid fa-chevron-up"></i>
+                    </div>
+                    <div class="dusra">
+                        <div id="choose_km">
+                            <p>Choose from options below (km)</p>
+                        </div>
+                        <div class="choose_price_range">
+                            <p>Below 10,000 km</p>
+                            <p>34,200+items</p>
+                        </div>
+                        <div class="choose_price_range">
+                            <p>Below 10,000 km</p>
+                            <p>34,200+items</p>
+                        </div>
+                        <div class="choose_price_range">
+                            <p>Below 10,000 km</p>
+                            <p>34,200+items</p>
+                        </div>
+                        <div class="choose_price_range">
+                            <p>Below 10,000 km</p>
+                            <p>34,200+items</p>
+                        </div>
+                        <div class="choose_price_range">
+                            <p>Below 10,000 km</p>
+                            <p>34,200+items</p>
+                        </div>
+                        <div class="choose_price_range">
+                            <p>Below 10,000 km</p>
+                            <p>34,200+items</p>
+                        </div>
+                       
+                    </div>
+                </div>
+                <hr>
+
+               
+                <div class="km_driven">
+                    <div class="choose_head2">
+                        <h3>YEAR</h3>
+                        <i id="up2" class="fa-solid fa-chevron-up"></i>
+                    </div>
+                    <div class="dusra2">
+                        <div id="choose_km">
+                            <p>Choose from options below (km)</p>
+                        </div>
+                        <div class="choose_price_range2">
+                            <p>Under 3years</p>
+                            <p>34,200+items</p>
+                        </div>
+                        <div class="choose_price_range2">
+                            <p>Under 5years</p>
+                            <p>34,200+items</p>
+                        </div>
+                        <div class="choose_price_range2">
+                            <p>Under 7years</p>
+                            <p>34,200+items</p>
+                        </div>
+                        <div class="choose_price_range2">
+                            <p>Under 10years</p>
+                            <p>34,200+items</p>
+                        </div>
+                        
+                       
+                    </div>
+                </div>
+                <hr>
             </div>
-            
-        
+
+
         </div>
 
         <div id="mob_con"></div>
-
     </div>
+    <div id="add_footer"></div>
 </body>
+
 </html>
 
-
 <script src="commercial.js"></script>
+<script type="module">
+    import navbar from '../components/navbar.js';
+
+  document.getElementById('add_navbar').innerHTML = navbar();
+    import footer from '../components/footer.js';
+
+  document.getElementById('add_footer').innerHTML = footer();
+  import nav from '../components/nav.js';
+  nav()
+    </script>

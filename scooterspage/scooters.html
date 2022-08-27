@@ -7,15 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>www.olx.in/motorcycles_c81</title>
     <link rel="stylesheet" href="scooters.css">
-    <link rel="stylesheet" href="../components/footer.css">
-    <link rel="stylesheet" href="../navbar_folder/nav.css">
+    <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="../style/nav.css">
     <script src="https://kit.fontawesome.com/5d8d1b2757.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/87218ca82a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div id="navbar"></div>
-    <div id="home_page_header"></div>
+   <div id="add_navbar"></div>
 
     <div id="container">
 
@@ -216,11 +215,19 @@
 
         <div id="mob_con"></div>
     </div>
-    <div id="footer"></div>
+    <div id="add_footer"></div>
 </body>
 
 </html>
 
-<script type="module" src="scooters.js"></script>
-<script type="module" src="../navbar_folder/nav.js"></script>
-<script type="module" src="../components/footer.js"></script>
+<script src="scooters.js"></script>
+<script type="module">
+    import navbar from '../components/navbar.js';
+
+  document.getElementById('add_navbar').innerHTML = navbar();
+    import footer from '../components/footer.js';
+
+  document.getElementById('add_footer').innerHTML = footer();
+  import nav from '../components/nav.js';
+  nav()
+    </script>
