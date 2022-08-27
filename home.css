@@ -1,6 +1,12 @@
 
 /* ***************************head imageg****************************** */
+*{
+    font-family: sans-serif;
+}
 
+#section{
+    margin-top: 120px;
+}
 .container{
     position: relative;
     width: 100%;
@@ -221,10 +227,15 @@ color: #6f8a94;
 #fresh_bottom>div h2{
     line-height: 0.1;
     padding-left: 7px;
+    color: black;
+}
+.freshsection a{
+ text-decoration: none;
 }
 #fresh_bottom>div h2,p{
     line-height: 0.1;
-    padding-left: 7px; 
+    padding-left: 7px;
+    color: black;
 }
 #fresh_bottom>div h2 p,h5{
     line-height: 0.1 ;

@@ -228,12 +228,7 @@ let navbar = () => {
         <a href="./scooterspage/scooters.html">Scooters</a>
         <a href="./commercialpage/commercial.html"> Commercial & Other Vehicles</a>
         <a href="./housespage/house.html"> For Rent: Houses & Apartments</a>   
-    </div>
-<<<<<<< HEAD
-    
-=======
->>>>>>> 5aa62d89ea7ecf76091853652ea73db16c97ff94
-    `
+    </div>`
 }
 
 export default navbar;
